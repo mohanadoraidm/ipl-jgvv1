@@ -1,0 +1,44 @@
+name: Scrape IPL Points & Deploy
+
+on:
+  schedule:
+    # Runs at 11:30 PM IST (18:00 UTC) every day during IPL season
+    - cron: "0 18 * * *"
+  workflow_dispatch:   # lets you trigger manually from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        run: python scraper.py
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data.json baseline_points.json
+          git diff --cached --quiet || git commit -m "Auto-update: IPL points $(date +'%d %b %Y %H:%M IST')"
+          git push

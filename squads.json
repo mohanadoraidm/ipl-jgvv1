@@ -1,0 +1,46 @@
+{
+  "auction_date": "2026-05-08",
+  "teams": {
+    "RR": [
+      "Shardul", "Miller", "Yashasvi Jaiswal", "Arshdeep Singh", "Priyansh Arya",
+      "Vaibhav Suryavanshi", "Rabada", "Abhishek Sharma", "Sunil",
+      "Suyash", "Overton", "Siraj", "Donovan Ferreira", "Riyan Parag",
+      "Vyshak Vijaykumar", "Mayank Yadav", "Nitish Kumar Reddy", "Rashik Salam",
+      "Wadhera", "Shashank Singh", "Bartlett", "Stubbs", "Shubham Dubey",
+      "Ashutosh Sharma", "Ashok Sharma"
+    ],
+    "CSK": [
+      "MS Dhoni", "Rashid Khan", "Noor Ahmed", "Karthik Tyagi", "Aiden Markram",
+      "Sanju Samson", "KL Rahul", "Kamboj", "Urvil Patel", "Travis Head",
+      "Sarfaraz Khan", "Heinrich Klaasen", "Eshan Malinga", "Deepak Chahar",
+      "Mohsin Khan", "Bhuvneshwar Kumar", "Ngidi", "Avesh Khan", "Naman Dhir",
+      "Nithish Rana", "Aniket Varma", "Rowan Powell", "Rahul Tewatia",
+      "Vaibhav Arora", "Sandeep Sharma"
+    ],
+    "MI": [
+      "Nicholas Pooran", "Suryakumar Yadav", "Shubman Gill", "Sai Sudarshan",
+      "Rajat Patidar", "Shivam Dube", "Mitchell Starc", "Raghuvanshi",
+      "Brevis", "Axar Patel", "Yuzvendra Chahal", "Jos Buttler", "Tim David",
+      "Hardik Pandya", "Marco Jansen", "Corbin Bosch", "Jason Holder",
+      "Ravindra Jadeja", "Marcus Stoinis", "Jacob Bethell", "Rishabh Pant",
+      "Salil", "Brijesh", "Suyansh", "Gurjapneet"
+    ],
+    "RCB": [
+      "Virat Kohli", "Shreyas Iyer", "Tilak Varma", "Devdutt Padikkal",
+      "Rinku Singh", "Ajinkya Rahane", "Prabhsimran Singh", "Phil Salt",
+      "Cameron Green", "Cooper Connolly", "Harpreet Brar", "Ravi Bishnoi",
+      "Varun Chakravarthy", "Allah Ghazanfar", "Harsh Dubey", "Prashant Veer",
+      "Jofra Archer", "Josh Hazlewood", "Trent Boult", "Prasidh Krishna",
+      "T Natarajan", "Mukesh Kumar", "Mukul Choudhary", "Finn Allen",
+      "Romario Shepherd"
+    ],
+    "SRH": [
+      "Shimron Hetmyer", "Kuldeep Yadav", "Akeal Hosein", "Will Jacks",
+      "Krunal Pandya", "Jitesh Sharma", "Ryan Rickelton", "Karthik Sharma",
+      "Rutu", "Pat Cummins", "Pathum Nissanka", "Sameer Rizvi",
+      "Mukesh Choudhary", "Mohammed Shami", "Praful Hinge", "Hussain",
+      "Mitchell", "Washington Sundar", "Dhruv Jurel", "Rohit Sharma",
+      "Jasprit Bumrah", "Prince Yadav", "Ishan Kishan", "Shivang Kumar", "Burger"
+    ]
+  }
+}
