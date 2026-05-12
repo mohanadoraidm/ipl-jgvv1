@@ -184,25 +184,62 @@ def scrape_espn():
     time.sleep(5)
 
     players = {}
+
+    # First, print ALL columns of first 3 rows so we can debug the structure
     rows = driver.find_elements(By.CSS_SELECTOR, "table tbody tr")
     print(f"Found {len(rows)} table rows")
 
+    for i, row in enumerate(rows[:3]):
+        cols = row.find_elements(By.TAG_NAME, "td")
+        print(f"Row {i}: {len(cols)} columns")
+        for j, col in enumerate(cols):
+            print(f"  col[{j}] = '{col.text.strip()}'")
+
+    # Now parse all rows
     for row in rows:
         cols = row.find_elements(By.TAG_NAME, "td")
-        if len(cols) < 3:
+        if len(cols) < 2:
             continue
-        # col 0 = rank, col 1 = player name (first line), col 2 = impact pts
-        name_raw = cols[1].text.strip().split("\n")[0].strip()
-        try:
-            pts = float(cols[2].text.strip().replace(",", ""))
-        except ValueError:
-            continue
+
+        # Dump all col texts to find name and points
+        col_texts = [c.text.strip() for c in cols]
+
+        # Find the name: longest text that contains a space (likely a player name)
+        name_raw = ""
+        pts = 0.0
+
+        for j, text in enumerate(col_texts):
+            # Player name: has a space, not purely numeric, length > 5
+            if " " in text and not is_number(text) and len(text) > 5 and not name_raw:
+                # Take only first line in case of multi-line
+                name_raw = text.split("\n")[0].strip()
+
+        # Find points: look for a float value > 10 (impact points are usually > 10)
+        for j, text in enumerate(col_texts):
+            cleaned = text.replace(",", "").split("\n")[0].strip()
+            if is_number(cleaned):
+                val = float(cleaned)
+                if val > 10 or val < -50:   # impact pts range
+                    pts = val
+                    break
+
         if name_raw:
             players[name_raw] = pts
+            if len(players) <= 5:
+                print(f"  Parsed: '{name_raw}' → {pts} pts  | all cols: {col_texts}")
 
     driver.quit()
     print(f"Scraped {len(players)} players from ESPN")
     return players
+
+
+def is_number(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
+
 
 # ─────────────────────────────────────────────
 #  FUZZY NAME MATCHER
