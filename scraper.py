@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
+
 from datetime import datetime
 
 SQUADS_FILE  = "squads.json"
@@ -156,14 +156,14 @@ def make_driver():
     opts.add_argument("--headless=new")
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-dev-shm-usage")
+    opts.add_argument("--disable-gpu")
     opts.add_argument("--window-size=1920,1080")
     opts.add_argument(
         "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
     )
-    return webdriver.Chrome(
-        service=Service(ChromeDriverManager().install()), options=opts
-    )
+    # Selenium 4.10+ auto-detects ChromeDriver — no Service() needed
+    return webdriver.Chrome(options=opts)
 
 # ─────────────────────────────────────────────
 #  SCRAPE ESPN MVP PAGE
