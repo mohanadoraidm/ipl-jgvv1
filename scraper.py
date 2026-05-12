@@ -170,7 +170,7 @@ def make_driver():
 # ─────────────────────────────────────────────
 def scrape_espn():
     url = "https://www.espncricinfo.com/series/ipl-2026-1510719/most-valuable-players"
-    print(f"Loading ESPN MVP page...")
+    print("Loading ESPN MVP page...")
     driver = make_driver()
     driver.get(url)
 
@@ -184,61 +184,41 @@ def scrape_espn():
     time.sleep(5)
 
     players = {}
-
-    # First, print ALL columns of first 3 rows so we can debug the structure
     rows = driver.find_elements(By.CSS_SELECTOR, "table tbody tr")
-    print(f"Found {len(rows)} table rows")
+    print(f"Found {len(rows)} rows")
 
+    # Debug: print first 3 rows to confirm column structure
     for i, row in enumerate(rows[:3]):
         cols = row.find_elements(By.TAG_NAME, "td")
-        print(f"Row {i}: {len(cols)} columns")
-        for j, col in enumerate(cols):
-            print(f"  col[{j}] = '{col.text.strip()}'")
+        print(f"Row {i} ({len(cols)} cols): " +
+              " | ".join(f"[{j}]='{c.text.strip()[:30]}'" for j, c in enumerate(cols)))
 
-    # Now parse all rows
     for row in rows:
         cols = row.find_elements(By.TAG_NAME, "td")
-        if len(cols) < 2:
+        if len(cols) < 4:
             continue
 
-        # Dump all col texts to find name and points
-        col_texts = [c.text.strip() for c in cols]
+        # col[1] contains player name (may include team on second line — take first line only)
+        name_raw = cols[1].text.strip().split("\n")[0].strip()
 
-        # Find the name: longest text that contains a space (likely a player name)
-        name_raw = ""
-        pts = 0.0
+        # col[3] = Total Impact points
+        try:
+            pts = float(cols[3].text.strip().replace(",", "").split("\n")[0])
+        except ValueError:
+            continue
 
-        for j, text in enumerate(col_texts):
-            # Player name: has a space, not purely numeric, length > 5
-            if " " in text and not is_number(text) and len(text) > 5 and not name_raw:
-                # Take only first line in case of multi-line
-                name_raw = text.split("\n")[0].strip()
-
-        # Find points: look for a float value > 10 (impact points are usually > 10)
-        for j, text in enumerate(col_texts):
-            cleaned = text.replace(",", "").split("\n")[0].strip()
-            if is_number(cleaned):
-                val = float(cleaned)
-                if val > 10 or val < -50:   # impact pts range
-                    pts = val
-                    break
-
-        if name_raw:
+        if name_raw and not name_raw.isdigit():
             players[name_raw] = pts
-            if len(players) <= 5:
-                print(f"  Parsed: '{name_raw}' → {pts} pts  | all cols: {col_texts}")
 
     driver.quit()
-    print(f"Scraped {len(players)} players from ESPN")
+    print(f"Scraped {len(players)} players")
+    # Print first 5 to verify
+    for name, pts in list(players.items())[:5]:
+        print(f"  {name}: {pts}")
     return players
 
 
-def is_number(s):
-    try:
-        float(s)
-        return True
-    except ValueError:
-        return False
+
 
 
 # ─────────────────────────────────────────────
