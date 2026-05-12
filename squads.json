@@ -2,28 +2,30 @@
   "auction_date": "2026-05-08",
   "teams": {
     "RR": [
-      "Shardul", "Miller", "Yashasvi Jaiswal", "Arshdeep Singh", "Priyansh Arya",
-      "Vaibhav Suryavanshi", "Rabada", "Abhishek Sharma", "Sunil",
-      "Suyash", "Overton", "Siraj", "Donovan Ferreira", "Riyan Parag",
-      "Vyshak Vijaykumar", "Mayank Yadav", "Nitish Kumar Reddy", "Rashik Salam",
-      "Wadhera", "Shashank Singh", "Bartlett", "Stubbs", "Shubham Dubey",
-      "Ashutosh Sharma", "Ashok Sharma"
+      "Shardul Thakur", "David Miller", "Yashasvi Jaiswal", "Arshdeep Singh",
+      "Priyansh Arya", "Vaibhav Suryavanshi", "Kagiso Rabada", "Abhishek Sharma",
+      "Sunil Narine", "Suyash Sharma", "Jamie Overton", "Mohammed Siraj",
+      "Donovan Ferreira", "Riyan Parag", "Vijaykumar Vyshak", "Mayank Yadav",
+      "Nitish Kumar Reddy", "Rasikh Salam", "Nehal Wadhera", "Shashank Singh",
+      "Xavier Bartlett", "Tristan Stubbs", "Shubham Dubey", "Ashutosh Sharma",
+      "Ashok Sharma"
     ],
     "CSK": [
-      "MS Dhoni", "Rashid Khan", "Noor Ahmed", "Karthik Tyagi", "Aiden Markram",
-      "Sanju Samson", "KL Rahul", "Kamboj", "Urvil Patel", "Travis Head",
+      "MS Dhoni", "Rashid Khan", "Noor Ahmad", "Kartik Tyagi", "Aiden Markram",
+      "Sanju Samson", "KL Rahul", "Anshul Kamboj", "Urvil Patel", "Travis Head",
       "Sarfaraz Khan", "Heinrich Klaasen", "Eshan Malinga", "Deepak Chahar",
-      "Mohsin Khan", "Bhuvneshwar Kumar", "Ngidi", "Avesh Khan", "Naman Dhir",
-      "Nithish Rana", "Aniket Varma", "Rowan Powell", "Rahul Tewatia",
-      "Vaibhav Arora", "Sandeep Sharma"
+      "Mohsin Khan", "Bhuvneshwar Kumar", "Lungi Ngidi", "Avesh Khan",
+      "Naman Dhir", "Nitish Rana", "Aniket Verma", "Rovman Powell",
+      "Rahul Tewatia", "Vaibhav Arora", "Sandeep Sharma"
     ],
     "MI": [
-      "Nicholas Pooran", "Suryakumar Yadav", "Shubman Gill", "Sai Sudarshan",
-      "Rajat Patidar", "Shivam Dube", "Mitchell Starc", "Raghuvanshi",
-      "Brevis", "Axar Patel", "Yuzvendra Chahal", "Jos Buttler", "Tim David",
-      "Hardik Pandya", "Marco Jansen", "Corbin Bosch", "Jason Holder",
-      "Ravindra Jadeja", "Marcus Stoinis", "Jacob Bethell", "Rishabh Pant",
-      "Salil", "Brijesh", "Suyansh", "Gurjapneet"
+      "Nicholas Pooran", "Suryakumar Yadav", "Shubman Gill", "Sai Sudharsan",
+      "Rajat Patidar", "Shivam Dube", "Mitchell Starc", "Angkrish Raghuvanshi",
+      "Dewald Brevis", "Axar Patel", "Yuzvendra Chahal", "Jos Buttler",
+      "Tim David", "Hardik Pandya", "Marco Jansen", "Corbin Bosch",
+      "Jason Holder", "Ravindra Jadeja", "Marcus Stoinis", "Jacob Bethell",
+      "Rishabh Pant", "Salil Arora", "Brijesh Sharma", "Suryansh Shedge",
+      "Gurjapneet Singh"
     ],
     "RCB": [
       "Virat Kohli", "Shreyas Iyer", "Tilak Varma", "Devdutt Padikkal",
@@ -36,11 +38,12 @@
     ],
     "SRH": [
       "Shimron Hetmyer", "Kuldeep Yadav", "Akeal Hosein", "Will Jacks",
-      "Krunal Pandya", "Jitesh Sharma", "Ryan Rickelton", "Karthik Sharma",
-      "Rutu", "Pat Cummins", "Pathum Nissanka", "Sameer Rizvi",
-      "Mukesh Choudhary", "Mohammed Shami", "Praful Hinge", "Hussain",
-      "Mitchell", "Washington Sundar", "Dhruv Jurel", "Rohit Sharma",
-      "Jasprit Bumrah", "Prince Yadav", "Ishan Kishan", "Shivang Kumar", "Burger"
+      "Krunal Pandya", "Jitesh Sharma", "Ryan Rickelton", "Kartik Sharma",
+      "Ruturaj Gaikwad", "Pat Cummins", "Pathum Nissanka", "Sameer Rizvi",
+      "Mukesh Choudhary", "Mohammed Shami", "Praful Hinge", "Sakib Hussain",
+      "Mitchell Santner", "Washington Sundar", "Dhruv Jurel", "Rohit Sharma",
+      "Jasprit Bumrah", "Prince Yadav", "Ishan Kishan", "Shivang Kumar",
+      "Nandre Burger"
     ]
   }
 }
