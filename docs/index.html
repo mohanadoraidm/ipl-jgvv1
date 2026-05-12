@@ -7,86 +7,222 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:system-ui,sans-serif;background:#0d0d0d;color:#f0f0f0;min-height:100vh}
-.header{background:linear-gradient(135deg,#1a0600,#2d1000);padding:1.5rem 1rem;text-align:center;border-bottom:2px solid #ff6600}
-h1{font-size:1.5rem;font-weight:800}
-.sub{font-size:12px;color:#aaa;margin-top:4px}
-.upd{font-size:11px;color:#ff9933;margin-top:4px}
-.box{max-width:680px;margin:0 auto;padding:1rem}
-.stitle{font-size:11px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.1em;margin:1.2rem 0 .6rem}
-.lbc{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:12px;padding:.85rem 1rem;margin-bottom:8px;display:flex;align-items:center;gap:10px}
-.lbc.r1{border-left:4px solid #f59e0b}
-.lbc.r2{border-left:4px solid #9ca3af}
-.lbc.r3{border-left:4px solid #b45309}
-.rnk{font-size:1.3rem;width:28px;text-align:center;flex-shrink:0}
-.bdg{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700}
-.RR{background:#e91e63;color:#fff}.CSK{background:#f9c400;color:#000}
-.MI{background:#004ba0;color:#fff}.RCB{background:#c8102e;color:#fff}.SRH{background:#f4552c;color:#fff}
-.bw{height:6px;background:#222;border-radius:3px;flex:1;margin:0 8px}
-.bf{height:6px;border-radius:3px;transition:width .8s}
-.pts{font-size:1.1rem;font-weight:800;min-width:72px;text-align:right}
-.pos{color:#22c55e}.neg{color:#ef4444}.zer{color:#888}
-.rc{background:#1a1a1a;border:1px solid #222;border-radius:10px;margin-bottom:8px;overflow:hidden}
-.rh{padding:10px 14px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:13px}
-.rh:hover{background:#1f1f1f}
-.rb{display:none;padding:0 14px 8px}
-.rb.open{display:block}
-.pr{display:flex;align-items:center;padding:5px 0;border-bottom:1px solid #1e1e1e;font-size:12px}
-.pr:last-child{border:none}
-.pn{flex:1;color:#ccc}
-.pb{font-size:11px;color:#555;min-width:72px;text-align:right}
-.pv{min-width:62px;text-align:right;font-weight:700;font-size:12px}
-.spin{text-align:center;padding:3rem;color:#555}
+.hdr{background:linear-gradient(135deg,#1a0800,#2d1200);padding:1.2rem 1rem;text-align:center;border-bottom:2px solid #f97316;position:sticky;top:0;z-index:10}
+.hdr h1{font-size:1.3rem;font-weight:800}
+.hdr-sub{font-size:11px;color:#aaa;margin-top:2px}
+.upd{font-size:11px;color:#f97316;margin-top:3px}
+.box{max-width:480px;margin:0 auto;padding:1rem}
+
+/* HOME */
+.team-card{background:#161616;border:1px solid #252525;border-radius:12px;padding:1rem 1.2rem;margin-bottom:10px;display:flex;align-items:center;gap:12px;cursor:pointer;transition:border-color .2s,transform .15s}
+.team-card:hover{border-color:#f97316;transform:translateX(4px)}
+.team-card.r1{border-left:4px solid #f59e0b}
+.team-card.r2{border-left:4px solid #9ca3af}
+.team-card.r3{border-left:4px solid #92400e}
+.medal{font-size:1.4rem;width:30px;text-align:center;flex-shrink:0}
+.badge{display:inline-block;padding:3px 9px;border-radius:5px;font-size:12px;font-weight:700}
+.RR{background:#e11d48;color:#fff}
+.CSK{background:#eab308;color:#000}
+.MI{background:#1d4ed8;color:#fff}
+.RCB{background:#b91c1c;color:#fff}
+.SRH{background:#ea580c;color:#fff}
+.team-info{flex:1}
+.team-name{font-size:15px;font-weight:700;margin-bottom:4px}
+.bw{height:5px;background:#222;border-radius:3px;margin-top:6px}
+.bf{height:5px;border-radius:3px;transition:width .6s}
+.arrow{color:#555;font-size:18px;margin-left:4px}
+.team-pts{font-size:1.2rem;font-weight:800;text-align:right}
+.pos{color:#22c55e}.neg{color:#ef4444}.zero{color:#888}
+.saved-tag{font-size:10px;background:#22c55e22;color:#22c55e;border-radius:4px;padding:2px 6px;margin-left:6px;vertical-align:middle}
+
+/* TEAM PAGE */
+.back-btn{display:flex;align-items:center;gap:6px;background:none;border:none;color:#f97316;font-size:14px;font-weight:600;cursor:pointer;padding:0;margin-bottom:1rem}
+.sel-bar{background:#161616;border:1px solid #252525;border-radius:8px;padding:10px 14px;margin-bottom:1rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:72px;z-index:5}
+.sel-count{font-size:13px;color:#aaa}
+.sel-count span{color:#f97316;font-weight:700;font-size:16px}
+.save-btn{background:#22c55e;color:#000;border:none;border-radius:6px;padding:7px 16px;font-size:13px;font-weight:700;cursor:pointer;transition:background .2s}
+.save-btn:disabled{background:#2a2a2a;color:#555;cursor:not-allowed}
+.player-row{background:#161616;border:1px solid #252525;border-radius:8px;padding:10px 12px;margin-bottom:6px;display:flex;align-items:center;gap:10px;cursor:pointer;transition:border-color .15s,background .15s}
+.player-row:hover{border-color:#444}
+.player-row.selected{border-color:#22c55e;background:#071a0d}
+.player-row.locked{opacity:0.35;cursor:not-allowed;pointer-events:none}
+.chk{width:20px;height:20px;border-radius:5px;border:2px solid #444;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:12px;font-weight:700;transition:all .15s}
+.chk.on{background:#22c55e;border-color:#22c55e;color:#000}
+.pname{flex:1;font-size:13px;font-weight:500}
+.pnet{font-size:13px;font-weight:700;min-width:52px;text-align:right}
+.pbase{font-size:10px;color:#555;text-align:right}
+.stitle{font-size:11px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.1em;margin:0.5rem 0 .75rem}
+.spin{text-align:center;padding:3rem;color:#444;font-size:14px}
+.note{font-size:11px;color:#555;text-align:center;margin-top:1rem}
 </style>
 </head>
 <body>
-<div class="header">
-  <h1>🏏 IPL 2026 Auction Leaderboard</h1>
-  <div class="sub">ESPNcricinfo Impact Points · Net gain since 8 May 2026</div>
+
+<div class="hdr">
+  <h1>🏏 IPL 2026 Auction</h1>
+  <div class="hdr-sub">Pick 11 players per team · Net points since 8 May</div>
   <div class="upd" id="upd">Loading...</div>
 </div>
+
 <div class="box">
-  <div id="app"><div class="spin">Fetching leaderboard...</div></div>
+  <div id="home-page"><div class="spin">Fetching leaderboard...</div></div>
+  <div id="team-page" style="display:none"></div>
 </div>
+
 <script>
-const M=['🥇','🥈','🥉'],RC=['r1','r2','r3'];
-const C={RR:'#e91e63',CSK:'#f9c400',MI:'#004ba0',RCB:'#c8102e',SRH:'#f4552c'};
+let DATA = null;
+let currentTeam = null;
 
-fetch('data.json?v='+Date.now())
-.then(r=>r.json())
-.then(d=>{
-  document.getElementById('upd').textContent='Updated: '+d.updated_at;
-  const lb=d.leaderboard;
-  const mx=Math.max(...lb.map(t=>Math.abs(t.total)),1);
-  let h='<div class="stitle">Standings — net points since auction</div>';
+const MEDALS = ['🥇','🥈','🥉'];
+const RC = ['r1','r2','r3'];
+const COLORS = {RR:'#e11d48',CSK:'#eab308',MI:'#1d4ed8',RCB:'#b91c1c',SRH:'#ea580c'};
 
-  lb.forEach((t,i)=>{
-    const n=t.total,neg=n<0,cls=neg?'neg':n===0?'zer':'pos',s=n>0?'+':'';
-    const pct=Math.round(Math.abs(n)/mx*100);
-    h+=`<div class="lbc ${RC[i]||''}">
-      <div class="rnk">${M[i]||i+1}</div>
-      <span class="bdg ${t.team}">${t.team}</span>
-      <div class="bw"><div class="bf" style="width:${pct}%;background:${neg?'#ef4444':C[t.team]}"></div></div>
-      <div class="pts ${cls}">${s}${n.toFixed(1)}</div>
+function getSelections(team) {
+  try { return JSON.parse(localStorage.getItem('ipl_sel_' + team)) || []; }
+  catch { return []; }
+}
+
+function saveSelections(team, players) {
+  localStorage.setItem('ipl_sel_' + team, JSON.stringify(players));
+}
+
+function teamScore(teamData) {
+  const sel = getSelections(teamData.team);
+  if (sel.length === 11) {
+    return teamData.players
+      .filter(p => sel.includes(p.name))
+      .reduce((s, p) => s + p.net, 0);
+  }
+  return teamData.total;
+}
+
+function renderHome() {
+  if (!DATA) return;
+  document.getElementById('upd').textContent = 'Updated: ' + DATA.updated;
+
+  const lb = DATA.leaderboard.map(t => ({
+    ...t,
+    display_score: Math.round(teamScore(t) * 10) / 10
+  })).sort((a, b) => b.display_score - a.display_score);
+
+  const maxAbs = Math.max(...lb.map(t => Math.abs(t.display_score)), 1);
+
+  let h = '<div class="stitle">Leaderboard — tap a team to pick your 11</div>';
+
+  lb.forEach((t, i) => {
+    const n = t.display_score;
+    const neg = n < 0, cls = neg ? 'neg' : n === 0 ? 'zero' : 'pos';
+    const sign = n > 0 ? '+' : '';
+    const pct = Math.round(Math.abs(n) / maxAbs * 100);
+    const sel = getSelections(t.team);
+    const savedTag = sel.length === 11
+      ? '<span class="saved-tag">✓ 11 picked</span>' : '';
+
+    h += `<div class="team-card ${RC[i]||''}" onclick="openTeam('${t.team}')">
+      <div class="medal">${MEDALS[i] || i+1}</div>
+      <div class="team-info">
+        <div class="team-name">
+          <span class="badge ${t.team}">${t.team}</span>${savedTag}
+        </div>
+        <div class="bw">
+          <div class="bf" style="width:${pct}%;background:${neg?'#ef4444':COLORS[t.team]}"></div>
+        </div>
+      </div>
+      <div style="text-align:right;margin-left:8px">
+        <div class="team-pts ${cls}">${sign}${n.toFixed(1)}</div>
+        <div style="font-size:10px;color:#555;margin-top:2px">${sel.length===11?'from 11':'all 25'}</div>
+      </div>
+      <div class="arrow">›</div>
     </div>`;
   });
 
-  h+='<div class="stitle">Team Rosters</div>';
-  lb.forEach(t=>{
-    const n=t.total,s=n>=0?'+':'',cls=n>0?'pos':n<0?'neg':'zer';
-    const rows=t.players.map(p=>{
-      const pc=p.net>0?'pos':p.net<0?'neg':'zer',ps=p.net>0?'+':'';
-      return `<div class="pr"><div class="pn">${p.name}</div><div class="pb">base:${p.baseline.toFixed(1)}</div><div class="pv ${pc}">${ps}${p.net.toFixed(1)}</div></div>`;
-    }).join('');
-    h+=`<div class="rc"><div class="rh" onclick="tog(this)"><span><span class="bdg ${t.team}">${t.team}</span> <span class="${cls}" style="margin-left:8px;font-weight:700">${s}${n.toFixed(1)} pts</span></span><span>▼</span></div><div class="rb">${rows}</div></div>`;
+  h += '<div class="note">Scores update daily after matches</div>';
+  document.getElementById('home-page').innerHTML = h;
+}
+
+function openTeam(teamName) {
+  currentTeam = teamName;
+  document.getElementById('home-page').style.display = 'none';
+  document.getElementById('team-page').style.display = 'block';
+  renderTeamPage();
+}
+
+function renderTeamPage() {
+  const teamData = DATA.leaderboard.find(t => t.team === currentTeam);
+  const selected = getSelections(currentTeam);
+  const count = selected.length;
+
+  // Sort: selected first, then by net points descending
+  const players = [...teamData.players].sort((a, b) => {
+    const aS = selected.includes(a.name);
+    const bS = selected.includes(b.name);
+    if (aS && !bS) return -1;
+    if (!aS && bS) return 1;
+    return b.net - a.net;
   });
 
-  document.getElementById('app').innerHTML=h;
-})
-.catch(()=>{
-  document.getElementById('app').innerHTML='<div class="spin">⚠️ Run the scraper first via GitHub Actions</div>';
-});
+  const rows = players.map(p => {
+    const isSel = selected.includes(p.name);
+    const isLocked = !isSel && count >= 11;
+    const rowCls = isSel ? 'selected' : isLocked ? 'locked' : '';
+    const netCls = p.net > 0 ? 'pos' : p.net < 0 ? 'neg' : 'zero';
+    const sign = p.net > 0 ? '+' : '';
+    const safeName = p.name.replace(/'/g, "\\'");
 
-function tog(el){const b=el.nextElementSibling;b.classList.toggle('open');el.querySelector('span:last-child').textContent=b.classList.contains('open')?'▲':'▼';}
+    return `<div class="player-row ${rowCls}" onclick="togglePlayer('${safeName}')">
+      <div class="chk ${isSel ? 'on' : ''}">${isSel ? '✓' : ''}</div>
+      <div class="pname">${p.name}</div>
+      <div style="text-align:right">
+        <div class="pnet ${netCls}">${sign}${p.net}</div>
+        <div class="pbase">base: ${p.base}</div>
+      </div>
+    </div>`;
+  }).join('');
+
+  document.getElementById('team-page').innerHTML = `
+    <button class="back-btn" onclick="goHome()">← Back</button>
+    <div class="sel-bar">
+      <div class="sel-count">Selected: <span id="sel-count">${count}</span> / 11</div>
+      <button class="save-btn" id="save-btn" onclick="saveTeam()" ${count === 11 ? '' : 'disabled'}>
+        ${count === 11 ? '✓ SAVE SQUAD' : 'Pick 11'}
+      </button>
+    </div>
+    <div class="stitle">${currentTeam} squad — sorted by net points</div>
+    <div id="player-list">${rows}</div>`;
+}
+
+function togglePlayer(name) {
+  let selected = getSelections(currentTeam);
+  if (selected.includes(name)) {
+    selected = selected.filter(n => n !== name);
+  } else {
+    if (selected.length >= 11) return;
+    selected.push(name);
+  }
+  saveSelections(currentTeam, selected);
+  renderTeamPage();
+}
+
+function saveTeam() {
+  const sel = getSelections(currentTeam);
+  if (sel.length !== 11) { alert('Select exactly 11 players!'); return; }
+  alert('✅ ' + currentTeam + ' squad saved!');
+  goHome();
+}
+
+function goHome() {
+  document.getElementById('team-page').style.display = 'none';
+  document.getElementById('home-page').style.display = 'block';
+  renderHome();
+}
+
+fetch('data.json?v=' + Date.now())
+  .then(r => r.json())
+  .then(d => { DATA = d; renderHome(); })
+  .catch(() => {
+    document.getElementById('home-page').innerHTML =
+      '<div class="spin">⚠️ Run the scraper first via GitHub Actions</div>';
+  });
 </script>
 </body>
 </html>
