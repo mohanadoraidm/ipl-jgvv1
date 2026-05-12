@@ -199,11 +199,11 @@ def scrape_espn():
             continue
 
         # col[1] contains player name (may include team on second line — take first line only)
-        name_raw = cols[1].text.strip().split("\n")[0].strip()
+        name_raw = cols[0].text.strip().split("\n")[0].strip()
 
         # col[3] = Total Impact points
         try:
-            pts = float(cols[3].text.strip().replace(",", "").split("\n")[0])
+            pts = float(cols[2].text.strip().replace(",", "").split("\n")[0])
         except ValueError:
             continue
 
