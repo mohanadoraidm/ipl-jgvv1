@@ -16,44 +16,44 @@ body{font-family:system-ui,sans-serif;background:#0d0d0d;color:#f0f0f0;min-heigh
 /* HOME */
 .team-card{background:#161616;border:1px solid #252525;border-radius:12px;padding:1rem 1.2rem;margin-bottom:10px;display:flex;align-items:center;gap:12px;cursor:pointer;transition:border-color .2s,transform .15s}
 .team-card:hover{border-color:#f97316;transform:translateX(4px)}
-.team-card.r1{border-left:4px solid #f59e0b}
-.team-card.r2{border-left:4px solid #9ca3af}
-.team-card.r3{border-left:4px solid #92400e}
-.medal{font-size:1.4rem;width:30px;text-align:center;flex-shrink:0}
-.badge{display:inline-block;padding:3px 9px;border-radius:5px;font-size:12px;font-weight:700}
-.RR{background:#e11d48;color:#fff}
-.CSK{background:#eab308;color:#000}
-.MI{background:#1d4ed8;color:#fff}
-.RCB{background:#b91c1c;color:#fff}
-.SRH{background:#ea580c;color:#fff}
-.team-info{flex:1}
-.team-name{font-size:15px;font-weight:700;margin-bottom:4px}
-.bw{height:5px;background:#222;border-radius:3px;margin-top:6px}
+.team-logo{width:40px;height:40px;border-radius:50%;object-fit:cover;background:#111;flex-shrink:0}
+.team-info{flex:1;min-width:0}
+.team-name-row{display:flex;align-items:center;gap:6px;margin-bottom:5px}
+.tname{font-size:15px;font-weight:700}
+.bw{height:5px;background:#222;border-radius:3px}
 .bf{height:5px;border-radius:3px;transition:width .6s}
-.arrow{color:#555;font-size:18px;margin-left:4px}
-.team-pts{font-size:1.2rem;font-weight:800;text-align:right}
+.arrow{color:#555;font-size:18px;flex-shrink:0}
+.team-pts{font-size:1.2rem;font-weight:800;text-align:right;flex-shrink:0}
 .pos{color:#22c55e}.neg{color:#ef4444}.zero{color:#888}
-.saved-tag{font-size:10px;background:#22c55e22;color:#22c55e;border-radius:4px;padding:2px 6px;margin-left:6px;vertical-align:middle}
+.saved-tag{font-size:10px;background:#22c55e22;color:#22c55e;border-radius:4px;padding:2px 6px}
+.medal{font-size:1.3rem;width:26px;text-align:center;flex-shrink:0}
 
 /* TEAM PAGE */
 .back-btn{display:flex;align-items:center;gap:6px;background:none;border:none;color:#f97316;font-size:14px;font-weight:600;cursor:pointer;padding:0;margin-bottom:1rem}
-.sel-bar{background:#161616;border:1px solid #252525;border-radius:8px;padding:10px 14px;margin-bottom:1rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:72px;z-index:5}
-.sel-count{font-size:13px;color:#aaa}
+.team-header{display:flex;align-items:center;gap:12px;background:#161616;border:1px solid #252525;border-radius:10px;padding:12px 14px;margin-bottom:1rem}
+.team-header img{width:48px;height:48px;border-radius:50%;object-fit:cover;background:#111}
+.team-header-name{font-size:17px;font-weight:700}
+.team-header-sub{font-size:11px;color:#666;margin-top:3px}
+.sel-bar{background:#161616;border:1px solid #333;border-radius:8px;padding:10px 14px;margin-bottom:1rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:72px;z-index:5;gap:8px}
+.sel-count{font-size:13px;color:#aaa;white-space:nowrap}
 .sel-count span{color:#f97316;font-weight:700;font-size:16px}
-.save-btn{background:#22c55e;color:#000;border:none;border-radius:6px;padding:7px 16px;font-size:13px;font-weight:700;cursor:pointer;transition:background .2s}
+.btn-row{display:flex;gap:6px;flex-shrink:0}
+.auto-btn{background:#f97316;color:#000;border:none;border-radius:6px;padding:7px 12px;font-size:12px;font-weight:700;cursor:pointer}
+.auto-btn:hover{background:#fb923c}
+.save-btn{background:#22c55e;color:#000;border:none;border-radius:6px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer}
 .save-btn:disabled{background:#2a2a2a;color:#555;cursor:not-allowed}
 .player-row{background:#161616;border:1px solid #252525;border-radius:8px;padding:10px 12px;margin-bottom:6px;display:flex;align-items:center;gap:10px;cursor:pointer;transition:border-color .15s,background .15s}
 .player-row:hover{border-color:#444}
 .player-row.selected{border-color:#22c55e;background:#071a0d}
-.player-row.locked{opacity:0.35;cursor:not-allowed;pointer-events:none}
-.chk{width:20px;height:20px;border-radius:5px;border:2px solid #444;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:12px;font-weight:700;transition:all .15s}
-.chk.on{background:#22c55e;border-color:#22c55e;color:#000}
+.player-row.locked{opacity:0.3;cursor:not-allowed;pointer-events:none}
+.chk{width:20px;height:20px;border-radius:5px;border:2px solid #444;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:11px;font-weight:700;color:#000;transition:all .15s}
+.chk.on{background:#22c55e;border-color:#22c55e}
 .pname{flex:1;font-size:13px;font-weight:500}
 .pnet{font-size:13px;font-weight:700;min-width:52px;text-align:right}
 .pbase{font-size:10px;color:#555;text-align:right}
-.stitle{font-size:11px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.1em;margin:0.5rem 0 .75rem}
+.stitle{font-size:11px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.1em;margin:.5rem 0 .75rem}
 .spin{text-align:center;padding:3rem;color:#444;font-size:14px}
-.note{font-size:11px;color:#555;text-align:center;margin-top:1rem}
+.note{font-size:11px;color:#444;text-align:center;margin-top:1rem;padding-bottom:2rem}
 </style>
 </head>
 <body>
@@ -75,15 +75,25 @@ let currentTeam = null;
 
 const MEDALS = ['🥇','🥈','🥉'];
 const RC = ['r1','r2','r3'];
-const COLORS = {RR:'#e11d48',CSK:'#eab308',MI:'#1d4ed8',RCB:'#b91c1c',SRH:'#ea580c'};
+
+const TEAM_META = {
+  RR:  { color:'#e11d48', logo:'https://documents.iplt20.com/ipl/RR/logos/Logooutline/RRoutline.png' },
+  CSK: { color:'#eab308', logo:'https://documents.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png' },
+  MI:  { color:'#1d4ed8', logo:'https://documents.iplt20.com/ipl/MI/logos/Logooutline/MIoutline.png' },
+  RCB: { color:'#b91c1c', logo:'https://documents.iplt20.com/ipl/RCB/logos/Logooutline/RCBoutline.png' },
+  SRH: { color:'#ea580c', logo:'https://documents.iplt20.com/ipl/SRH/logos/Logooutline/SRHoutline.png' },
+};
+
+// Handle both old field names (net_pts/baseline_pts) and new (net/base)
+function pNet(p)  { return p.net  ?? p.net_pts      ?? 0; }
+function pBase(p) { return p.base ?? p.baseline_pts ?? 0; }
 
 function getSelections(team) {
   try { return JSON.parse(localStorage.getItem('ipl_sel_' + team)) || []; }
   catch { return []; }
 }
-
-function saveSelections(team, players) {
-  localStorage.setItem('ipl_sel_' + team, JSON.stringify(players));
+function saveSelections(team, arr) {
+  localStorage.setItem('ipl_sel_' + team, JSON.stringify(arr));
 }
 
 function teamScore(teamData) {
@@ -91,9 +101,9 @@ function teamScore(teamData) {
   if (sel.length === 11) {
     return teamData.players
       .filter(p => sel.includes(p.name))
-      .reduce((s, p) => s + p.net, 0);
+      .reduce((s, p) => s + pNet(p), 0);
   }
-  return teamData.total;
+  return teamData.total ?? teamData.total_net_pts ?? 0;
 }
 
 function renderHome() {
@@ -106,8 +116,7 @@ function renderHome() {
   })).sort((a, b) => b.display_score - a.display_score);
 
   const maxAbs = Math.max(...lb.map(t => Math.abs(t.display_score)), 1);
-
-  let h = '<div class="stitle">Leaderboard — tap a team to pick your 11</div>';
+  let h = '<div class="stitle">Leaderboard — tap team to pick your 11</div>';
 
   lb.forEach((t, i) => {
     const n = t.display_score;
@@ -115,28 +124,28 @@ function renderHome() {
     const sign = n > 0 ? '+' : '';
     const pct = Math.round(Math.abs(n) / maxAbs * 100);
     const sel = getSelections(t.team);
-    const savedTag = sel.length === 11
-      ? '<span class="saved-tag">✓ 11 picked</span>' : '';
+    const meta = TEAM_META[t.team] || { color:'#888', logo:'' };
+    const savedTag = sel.length === 11 ? '<span class="saved-tag">✓ 11 picked</span>' : '';
 
-    h += `<div class="team-card ${RC[i]||''}" onclick="openTeam('${t.team}')">
+    h += `<div class="team-card" onclick="openTeam('${t.team}')" style="border-left:4px solid ${meta.color}">
       <div class="medal">${MEDALS[i] || i+1}</div>
+      <img class="team-logo" src="${meta.logo}" onerror="this.style.display='none'" alt="${t.team}">
       <div class="team-info">
-        <div class="team-name">
-          <span class="badge ${t.team}">${t.team}</span>${savedTag}
+        <div class="team-name-row">
+          <span class="tname" style="color:${meta.color}">${t.team}</span>
+          ${savedTag}
         </div>
-        <div class="bw">
-          <div class="bf" style="width:${pct}%;background:${neg?'#ef4444':COLORS[t.team]}"></div>
-        </div>
+        <div class="bw"><div class="bf" style="width:${pct}%;background:${neg?'#ef4444':meta.color}"></div></div>
       </div>
-      <div style="text-align:right;margin-left:8px">
+      <div style="text-align:right;margin-left:4px">
         <div class="team-pts ${cls}">${sign}${n.toFixed(1)}</div>
-        <div style="font-size:10px;color:#555;margin-top:2px">${sel.length===11?'from 11':'all 25'}</div>
+        <div style="font-size:10px;color:#555;margin-top:2px">${sel.length===11?'11 players':'full 25'}</div>
       </div>
       <div class="arrow">›</div>
     </div>`;
   });
 
-  h += '<div class="note">Scores update daily after matches</div>';
+  h += '<div class="note">Scores update daily after each match day 🏏</div>';
   document.getElementById('home-page').innerHTML = h;
 }
 
@@ -147,65 +156,83 @@ function openTeam(teamName) {
   renderTeamPage();
 }
 
+function autoPickBest() {
+  const teamData = DATA.leaderboard.find(t => t.team === currentTeam);
+  const top11 = [...teamData.players]
+    .sort((a, b) => pNet(b) - pNet(a))
+    .slice(0, 11)
+    .map(p => p.name);
+  saveSelections(currentTeam, top11);
+  renderTeamPage();
+}
+
+function clearSelection() {
+  saveSelections(currentTeam, []);
+  renderTeamPage();
+}
+
 function renderTeamPage() {
   const teamData = DATA.leaderboard.find(t => t.team === currentTeam);
   const selected = getSelections(currentTeam);
   const count = selected.length;
+  const meta = TEAM_META[currentTeam] || { color:'#888', logo:'' };
 
-  // Sort: selected first, then by net points descending
   const players = [...teamData.players].sort((a, b) => {
     const aS = selected.includes(a.name);
     const bS = selected.includes(b.name);
     if (aS && !bS) return -1;
     if (!aS && bS) return 1;
-    return b.net - a.net;
+    return pNet(b) - pNet(a);
   });
 
   const rows = players.map(p => {
     const isSel = selected.includes(p.name);
     const isLocked = !isSel && count >= 11;
-    const rowCls = isSel ? 'selected' : isLocked ? 'locked' : '';
-    const netCls = p.net > 0 ? 'pos' : p.net < 0 ? 'neg' : 'zero';
-    const sign = p.net > 0 ? '+' : '';
-    const safeName = p.name.replace(/'/g, "\\'");
-
-    return `<div class="player-row ${rowCls}" onclick="togglePlayer('${safeName}')">
-      <div class="chk ${isSel ? 'on' : ''}">${isSel ? '✓' : ''}</div>
+    const net = pNet(p), base = pBase(p);
+    const netCls = net > 0 ? 'pos' : net < 0 ? 'neg' : 'zero';
+    const sign = net > 0 ? '+' : '';
+    const safeName = p.name.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
+    return `<div class="player-row ${isSel?'selected':isLocked?'locked':''}" onclick="togglePlayer('${safeName}')">
+      <div class="chk ${isSel?'on':''}">${isSel?'✓':''}</div>
       <div class="pname">${p.name}</div>
       <div style="text-align:right">
-        <div class="pnet ${netCls}">${sign}${p.net}</div>
-        <div class="pbase">base: ${p.base}</div>
+        <div class="pnet ${netCls}">${sign}${net.toFixed(1)}</div>
+        <div class="pbase">base: ${base.toFixed(1)}</div>
       </div>
     </div>`;
   }).join('');
 
   document.getElementById('team-page').innerHTML = `
-    <button class="back-btn" onclick="goHome()">← Back</button>
-    <div class="sel-bar">
-      <div class="sel-count">Selected: <span id="sel-count">${count}</span> / 11</div>
-      <button class="save-btn" id="save-btn" onclick="saveTeam()" ${count === 11 ? '' : 'disabled'}>
-        ${count === 11 ? '✓ SAVE SQUAD' : 'Pick 11'}
-      </button>
+    <button class="back-btn" onclick="goHome()">← Back to leaderboard</button>
+    <div class="team-header">
+      <img src="${meta.logo}" onerror="this.style.display='none'" alt="${currentTeam}">
+      <div>
+        <div class="team-header-name" style="color:${meta.color}">${currentTeam}</div>
+        <div class="team-header-sub">Select your best 11 players</div>
+      </div>
     </div>
-    <div class="stitle">${currentTeam} squad — sorted by net points</div>
+    <div class="sel-bar">
+      <div class="sel-count">Selected: <span>${count}</span> / 11</div>
+      <div class="btn-row">
+        <button class="auto-btn" onclick="autoPickBest()">⚡ Auto</button>
+        <button class="auto-btn" style="background:#334155;color:#94a3b8" onclick="clearSelection()">✕ Clear</button>
+        <button class="save-btn" onclick="saveTeam()" ${count===11?'':'disabled'}>${count===11?'✓ Save':'Pick 11'}</button>
+      </div>
+    </div>
+    <div class="stitle">${currentTeam} — tap to select · sorted by net points</div>
     <div id="player-list">${rows}</div>`;
 }
 
 function togglePlayer(name) {
-  let selected = getSelections(currentTeam);
-  if (selected.includes(name)) {
-    selected = selected.filter(n => n !== name);
-  } else {
-    if (selected.length >= 11) return;
-    selected.push(name);
-  }
-  saveSelections(currentTeam, selected);
+  let sel = getSelections(currentTeam);
+  if (sel.includes(name)) sel = sel.filter(n => n !== name);
+  else { if (sel.length >= 11) return; sel.push(name); }
+  saveSelections(currentTeam, sel);
   renderTeamPage();
 }
 
 function saveTeam() {
-  const sel = getSelections(currentTeam);
-  if (sel.length !== 11) { alert('Select exactly 11 players!'); return; }
+  if (getSelections(currentTeam).length !== 11) { alert('Select exactly 11!'); return; }
   alert('✅ ' + currentTeam + ' squad saved!');
   goHome();
 }
