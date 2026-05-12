@@ -7,112 +7,86 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:system-ui,sans-serif;background:#0d0d0d;color:#f0f0f0;min-height:100vh}
-.header{background:linear-gradient(135deg,#1a0a00,#2a1200);padding:2rem 1rem 1.5rem;text-align:center;border-bottom:2px solid #ff6600}
-.header h1{font-size:1.7rem;font-weight:800;letter-spacing:.02em}
-.header p{font-size:13px;color:#aaa;margin-top:5px}
-.updated{font-size:12px;color:#ff9933;margin-top:6px;font-weight:500}
-.container{max-width:720px;margin:0 auto;padding:1.5rem 1rem}
-.section-title{font-size:12px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.1em;margin:1.5rem 0 .75rem}
-.lb-card{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:14px;padding:1rem 1.25rem;margin-bottom:10px;display:flex;align-items:center;gap:12px;transition:border-color .2s}
-.lb-card:hover{border-color:#ff6600}
-.lb-card.r1{border-left:4px solid #f59e0b}
-.lb-card.r2{border-left:4px solid #9ca3af}
-.lb-card.r3{border-left:4px solid #b45309}
-.rank{font-size:1.5rem;width:36px;text-align:center;flex-shrink:0}
-.tname{flex:1;font-size:1.05rem;font-weight:700}
-.bar-wrap{height:6px;background:#2a2a2a;border-radius:3px;flex:2}
-.bar{height:6px;border-radius:3px;transition:width 1s ease}
-.pts{font-size:1.2rem;font-weight:800;min-width:80px;text-align:right}
-.pos{color:#22c55e}.neg{color:#ef4444}.zero{color:#888}
-.roster-card{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:12px;margin-bottom:10px;overflow:hidden}
-.roster-header{padding:12px 16px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;user-select:none}
-.roster-header:hover{background:#222}
-.roster-header h3{font-size:14px;font-weight:700}
-.roster-body{display:none;padding:0 16px 12px}
-.roster-body.open{display:block}
-.prow{display:flex;align-items:center;padding:7px 0;border-bottom:1px solid #222;font-size:13px;gap:8px}
-.prow:last-child{border:none}
-.pname{flex:1;color:#ddd}
-.pbase{font-size:11px;color:#666;min-width:80px;text-align:right}
-.pnet{min-width:70px;text-align:right;font-weight:700;font-size:13px}
-.team-badge{display:inline-block;padding:2px 7px;border-radius:4px;font-size:10px;font-weight:700;margin-right:5px}
-.RR{background:#FF3366;color:#fff}
-.CSK{background:#F7C948;color:#000}
-.MI{background:#004BA0;color:#fff}
-.RCB{background:#C8102E;color:#fff}
-.SRH{background:#F26522;color:#fff}
-.spinner{text-align:center;padding:4rem;color:#666}
-.nodata{color:#ef4444;font-size:12px;margin-left:6px}
+.header{background:linear-gradient(135deg,#1a0600,#2d1000);padding:1.5rem 1rem;text-align:center;border-bottom:2px solid #ff6600}
+h1{font-size:1.5rem;font-weight:800}
+.sub{font-size:12px;color:#aaa;margin-top:4px}
+.upd{font-size:11px;color:#ff9933;margin-top:4px}
+.box{max-width:680px;margin:0 auto;padding:1rem}
+.stitle{font-size:11px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.1em;margin:1.2rem 0 .6rem}
+.lbc{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:12px;padding:.85rem 1rem;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.lbc.r1{border-left:4px solid #f59e0b}
+.lbc.r2{border-left:4px solid #9ca3af}
+.lbc.r3{border-left:4px solid #b45309}
+.rnk{font-size:1.3rem;width:28px;text-align:center;flex-shrink:0}
+.bdg{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700}
+.RR{background:#e91e63;color:#fff}.CSK{background:#f9c400;color:#000}
+.MI{background:#004ba0;color:#fff}.RCB{background:#c8102e;color:#fff}.SRH{background:#f4552c;color:#fff}
+.bw{height:6px;background:#222;border-radius:3px;flex:1;margin:0 8px}
+.bf{height:6px;border-radius:3px;transition:width .8s}
+.pts{font-size:1.1rem;font-weight:800;min-width:72px;text-align:right}
+.pos{color:#22c55e}.neg{color:#ef4444}.zer{color:#888}
+.rc{background:#1a1a1a;border:1px solid #222;border-radius:10px;margin-bottom:8px;overflow:hidden}
+.rh{padding:10px 14px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:13px}
+.rh:hover{background:#1f1f1f}
+.rb{display:none;padding:0 14px 8px}
+.rb.open{display:block}
+.pr{display:flex;align-items:center;padding:5px 0;border-bottom:1px solid #1e1e1e;font-size:12px}
+.pr:last-child{border:none}
+.pn{flex:1;color:#ccc}
+.pb{font-size:11px;color:#555;min-width:72px;text-align:right}
+.pv{min-width:62px;text-align:right;font-weight:700;font-size:12px}
+.spin{text-align:center;padding:3rem;color:#555}
 </style>
 </head>
 <body>
 <div class="header">
   <h1>🏏 IPL 2026 Auction Leaderboard</h1>
-  <p>ESPNcricinfo Impact Points · Net gain since auction day (8 May 2026)</p>
-  <div class="updated" id="upd">Loading...</div>
+  <div class="sub">ESPNcricinfo Impact Points · Net gain since 8 May 2026</div>
+  <div class="upd" id="upd">Loading...</div>
 </div>
-<div class="container">
-  <div id="app"><div class="spinner">Fetching leaderboard...</div></div>
+<div class="box">
+  <div id="app"><div class="spin">Fetching leaderboard...</div></div>
 </div>
 <script>
-const MEDALS=['🥇','🥈','🥉'];
-const RCLASS=['r1','r2','r3'];
-const COLORS={RR:'#FF3366',CSK:'#F7C948',MI:'#004BA0',RCB:'#C8102E',SRH:'#F26522'};
+const M=['🥇','🥈','🥉'],RC=['r1','r2','r3'];
+const C={RR:'#e91e63',CSK:'#f9c400',MI:'#004ba0',RCB:'#c8102e',SRH:'#f4552c'};
 
 fetch('data.json?v='+Date.now())
 .then(r=>r.json())
-.then(data=>{
-  document.getElementById('upd').textContent='Last updated: '+data.updated_at;
-  const maxAbs=Math.max(...data.leaderboard.map(t=>Math.abs(t.total_net_pts)),1);
-  let html='<div class="section-title">Standings — net points since auction</div>';
+.then(d=>{
+  document.getElementById('upd').textContent='Updated: '+d.updated_at;
+  const lb=d.leaderboard;
+  const mx=Math.max(...lb.map(t=>Math.abs(t.total)),1);
+  let h='<div class="stitle">Standings — net points since auction</div>';
 
-  data.leaderboard.forEach((t,i)=>{
-    const n=t.total_net_pts, neg=n<0, pct=Math.round(Math.abs(n)/maxAbs*100);
-    const sign=n>0?'+':'';
-    const cls=neg?'neg':n===0?'zero':'pos';
-    html+=`<div class="lb-card ${RCLASS[i]||''}">
-      <div class="rank">${MEDALS[i]||i+1}</div>
-      <div class="tname"><span class="team-badge ${t.team}">${t.team}</span></div>
-      <div class="bar-wrap"><div class="bar" style="width:${pct}%;background:${neg?'#ef4444':COLORS[t.team]||'#22c55e'}"></div></div>
-      <div class="pts ${cls}">${sign}${n.toFixed(1)}</div>
+  lb.forEach((t,i)=>{
+    const n=t.total,neg=n<0,cls=neg?'neg':n===0?'zer':'pos',s=n>0?'+':'';
+    const pct=Math.round(Math.abs(n)/mx*100);
+    h+=`<div class="lbc ${RC[i]||''}">
+      <div class="rnk">${M[i]||i+1}</div>
+      <span class="bdg ${t.team}">${t.team}</span>
+      <div class="bw"><div class="bf" style="width:${pct}%;background:${neg?'#ef4444':C[t.team]}"></div></div>
+      <div class="pts ${cls}">${s}${n.toFixed(1)}</div>
     </div>`;
   });
 
-  html+='<div class="section-title">Team Rosters</div>';
-  data.leaderboard.forEach(t=>{
-    const players=data.teams[t.team]||[];
-    const n=t.total_net_pts, sign=n>=0?'+':'';
-    const cls=n>0?'pos':n<0?'neg':'zero';
-    const rows=players.map(p=>{
-      const pc=p.net_pts>0?'pos':p.net_pts<0?'neg':'zero';
-      const s=p.net_pts>0?'+':'';
-      const nodata=p.espn_name==='Not on ESPN yet'?`<span class="nodata">not on ESPN yet</span>`:'';
-      return `<div class="prow">
-        <div class="pname">${p.name}${nodata}</div>
-        <div class="pbase">base: ${p.baseline_pts.toFixed(1)}</div>
-        <div class="pnet ${pc}">${s}${p.net_pts.toFixed(1)}</div>
-      </div>`;
+  h+='<div class="stitle">Team Rosters</div>';
+  lb.forEach(t=>{
+    const n=t.total,s=n>=0?'+':'',cls=n>0?'pos':n<0?'neg':'zer';
+    const rows=t.players.map(p=>{
+      const pc=p.net>0?'pos':p.net<0?'neg':'zer',ps=p.net>0?'+':'';
+      return `<div class="pr"><div class="pn">${p.name}</div><div class="pb">base:${p.baseline.toFixed(1)}</div><div class="pv ${pc}">${ps}${p.net.toFixed(1)}</div></div>`;
     }).join('');
-    html+=`<div class="roster-card">
-      <div class="roster-header" onclick="tog(this)">
-        <h3><span class="team-badge ${t.team}">${t.team}</span> <span class="${cls}">${sign}${n.toFixed(1)} pts</span></h3>
-        <span>▼</span>
-      </div>
-      <div class="roster-body">${rows}</div>
-    </div>`;
+    h+=`<div class="rc"><div class="rh" onclick="tog(this)"><span><span class="bdg ${t.team}">${t.team}</span> <span class="${cls}" style="margin-left:8px;font-weight:700">${s}${n.toFixed(1)} pts</span></span><span>▼</span></div><div class="rb">${rows}</div></div>`;
   });
 
-  document.getElementById('app').innerHTML=html;
+  document.getElementById('app').innerHTML=h;
 })
 .catch(()=>{
-  document.getElementById('app').innerHTML='<div class="spinner">⚠️ data.json not found. Run the scraper first via GitHub Actions.</div>';
+  document.getElementById('app').innerHTML='<div class="spin">⚠️ Run the scraper first via GitHub Actions</div>';
 });
 
-function tog(el){
-  const b=el.nextElementSibling;
-  b.classList.toggle('open');
-  el.querySelector('span:last-child').textContent=b.classList.contains('open')?'▲':'▼';
-}
+function tog(el){const b=el.nextElementSibling;b.classList.toggle('open');el.querySelector('span:last-child').textContent=b.classList.contains('open')?'▲':'▼';}
 </script>
 </body>
 </html>
