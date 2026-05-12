@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IPL 2026 Auction Leaderboard</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,sans-serif;background:#0d0d0d;color:#f0f0f0;min-height:100vh}
+.header{background:linear-gradient(135deg,#1a0a00,#2a1200);padding:2rem 1rem 1.5rem;text-align:center;border-bottom:2px solid #ff6600}
+.header h1{font-size:1.7rem;font-weight:800;letter-spacing:.02em}
+.header p{font-size:13px;color:#aaa;margin-top:5px}
+.updated{font-size:12px;color:#ff9933;margin-top:6px;font-weight:500}
+.container{max-width:720px;margin:0 auto;padding:1.5rem 1rem}
+.section-title{font-size:12px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.1em;margin:1.5rem 0 .75rem}
+.lb-card{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:14px;padding:1rem 1.25rem;margin-bottom:10px;display:flex;align-items:center;gap:12px;transition:border-color .2s}
+.lb-card:hover{border-color:#ff6600}
+.lb-card.r1{border-left:4px solid #f59e0b}
+.lb-card.r2{border-left:4px solid #9ca3af}
+.lb-card.r3{border-left:4px solid #b45309}
+.rank{font-size:1.5rem;width:36px;text-align:center;flex-shrink:0}
+.tname{flex:1;font-size:1.05rem;font-weight:700}
+.bar-wrap{height:6px;background:#2a2a2a;border-radius:3px;flex:2}
+.bar{height:6px;border-radius:3px;transition:width 1s ease}
+.pts{font-size:1.2rem;font-weight:800;min-width:80px;text-align:right}
+.pos{color:#22c55e}.neg{color:#ef4444}.zero{color:#888}
+.roster-card{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:12px;margin-bottom:10px;overflow:hidden}
+.roster-header{padding:12px 16px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;user-select:none}
+.roster-header:hover{background:#222}
+.roster-header h3{font-size:14px;font-weight:700}
+.roster-body{display:none;padding:0 16px 12px}
+.roster-body.open{display:block}
+.prow{display:flex;align-items:center;padding:7px 0;border-bottom:1px solid #222;font-size:13px;gap:8px}
+.prow:last-child{border:none}
+.pname{flex:1;color:#ddd}
+.pbase{font-size:11px;color:#666;min-width:80px;text-align:right}
+.pnet{min-width:70px;text-align:right;font-weight:700;font-size:13px}
+.team-badge{display:inline-block;padding:2px 7px;border-radius:4px;font-size:10px;font-weight:700;margin-right:5px}
+.RR{background:#FF3366;color:#fff}
+.CSK{background:#F7C948;color:#000}
+.MI{background:#004BA0;color:#fff}
+.RCB{background:#C8102E;color:#fff}
+.SRH{background:#F26522;color:#fff}
+.spinner{text-align:center;padding:4rem;color:#666}
+.nodata{color:#ef4444;font-size:12px;margin-left:6px}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>🏏 IPL 2026 Auction Leaderboard</h1>
+  <p>ESPNcricinfo Impact Points · Net gain since auction day (8 May 2026)</p>
+  <div class="updated" id="upd">Loading...</div>
+</div>
+<div class="container">
+  <div id="app"><div class="spinner">Fetching leaderboard...</div></div>
+</div>
+<script>
+const MEDALS=['🥇','🥈','🥉'];
+const RCLASS=['r1','r2','r3'];
+const COLORS={RR:'#FF3366',CSK:'#F7C948',MI:'#004BA0',RCB:'#C8102E',SRH:'#F26522'};
+
+fetch('data.json?v='+Date.now())
+.then(r=>r.json())
+.then(data=>{
+  document.getElementById('upd').textContent='Last updated: '+data.updated_at;
+  const maxAbs=Math.max(...data.leaderboard.map(t=>Math.abs(t.total_net_pts)),1);
+  let html='<div class="section-title">Standings — net points since auction</div>';
+
+  data.leaderboard.forEach((t,i)=>{
+    const n=t.total_net_pts, neg=n<0, pct=Math.round(Math.abs(n)/maxAbs*100);
+    const sign=n>0?'+':'';
+    const cls=neg?'neg':n===0?'zero':'pos';
+    html+=`<div class="lb-card ${RCLASS[i]||''}">
+      <div class="rank">${MEDALS[i]||i+1}</div>
+      <div class="tname"><span class="team-badge ${t.team}">${t.team}</span></div>
+      <div class="bar-wrap"><div class="bar" style="width:${pct}%;background:${neg?'#ef4444':COLORS[t.team]||'#22c55e'}"></div></div>
+      <div class="pts ${cls}">${sign}${n.toFixed(1)}</div>
+    </div>`;
+  });
+
+  html+='<div class="section-title">Team Rosters</div>';
+  data.leaderboard.forEach(t=>{
+    const players=data.teams[t.team]||[];
+    const n=t.total_net_pts, sign=n>=0?'+':'';
+    const cls=n>0?'pos':n<0?'neg':'zero';
+    const rows=players.map(p=>{
+      const pc=p.net_pts>0?'pos':p.net_pts<0?'neg':'zero';
+      const s=p.net_pts>0?'+':'';
+      const nodata=p.espn_name==='Not on ESPN yet'?`<span class="nodata">not on ESPN yet</span>`:'';
+      return `<div class="prow">
+        <div class="pname">${p.name}${nodata}</div>
+        <div class="pbase">base: ${p.baseline_pts.toFixed(1)}</div>
+        <div class="pnet ${pc}">${s}${p.net_pts.toFixed(1)}</div>
+      </div>`;
+    }).join('');
+    html+=`<div class="roster-card">
+      <div class="roster-header" onclick="tog(this)">
+        <h3><span class="team-badge ${t.team}">${t.team}</span> <span class="${cls}">${sign}${n.toFixed(1)} pts</span></h3>
+        <span>▼</span>
+      </div>
+      <div class="roster-body">${rows}</div>
+    </div>`;
+  });
+
+  document.getElementById('app').innerHTML=html;
+})
+.catch(()=>{
+  document.getElementById('app').innerHTML='<div class="spinner">⚠️ data.json not found. Run the scraper first via GitHub Actions.</div>';
+});
+
+function tog(el){
+  const b=el.nextElementSibling;
+  b.classList.toggle('open');
+  el.querySelector('span:last-child').textContent=b.classList.contains('open')?'▲':'▼';
+}
+</script>
+</body>
+</html>
