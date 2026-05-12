@@ -1,917 +1,917 @@
 {
-  "updated_at": "12 May 2026 13:28 UTC",
+  "updated_at": "12 May 2026 13:40 UTC",
   "auction_date": "2026-05-08",
   "leaderboard": [
     {
       "rank": 1,
       "team": "MI",
-      "total_net_pts": -4608.7
+      "total_net_pts": 9802.7
     },
     {
       "rank": 2,
       "team": "RCB",
-      "total_net_pts": -5047.5
+      "total_net_pts": 9335.0
     },
     {
       "rank": 3,
       "team": "SRH",
-      "total_net_pts": -5286.6
+      "total_net_pts": 9190.5
     },
     {
       "rank": 4,
       "team": "CSK",
-      "total_net_pts": -5576.0
+      "total_net_pts": 8806.5
     },
     {
       "rank": 5,
       "team": "RR",
-      "total_net_pts": -5860.3
+      "total_net_pts": 8595.6
     }
   ],
   "teams": {
     "RR": [
       {
         "name": "Mayank Yadav",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": -30.5,
-        "net_pts": 33.5
+        "net_pts": 608.8
       },
       {
         "name": "Nehal Wadhera",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 1.5,
-        "net_pts": 1.5
+        "net_pts": 576.8
       },
       {
         "name": "Shubham Dubey",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 64.1,
-        "net_pts": -61.1
+        "net_pts": 514.2
       },
       {
         "name": "Ashutosh Sharma",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 82.8,
-        "net_pts": -79.8
+        "net_pts": 495.5
       },
       {
         "name": "Ashok Sharma",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 102.8,
-        "net_pts": -99.8
-      },
-      {
-        "name": "Rasikh Salam",
-        "espn_name": "11",
-        "current_pts": 3.0,
-        "baseline_pts": 125.3,
-        "net_pts": -122.3
-      },
-      {
-        "name": "Shardul Thakur",
-        "espn_name": "11",
-        "current_pts": 3.0,
-        "baseline_pts": 129.5,
-        "net_pts": -126.5
+        "net_pts": 475.5
       },
       {
         "name": "David Miller",
-        "espn_name": "MI",
-        "current_pts": -25.9,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 111.1,
-        "net_pts": -137.0
+        "net_pts": 467.2
+      },
+      {
+        "name": "Rasikh Salam",
+        "espn_name": "1",
+        "current_pts": 578.3,
+        "baseline_pts": 125.3,
+        "net_pts": 453.0
+      },
+      {
+        "name": "Shardul Thakur",
+        "espn_name": "1",
+        "current_pts": 578.3,
+        "baseline_pts": 129.5,
+        "net_pts": 448.8
       },
       {
         "name": "Xavier Bartlett",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 140.8,
-        "net_pts": -137.8
+        "net_pts": 437.5
       },
       {
         "name": "Shashank Singh",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 158.3,
-        "net_pts": -155.3
+        "net_pts": 420.0
       },
       {
         "name": "Vijaykumar Vyshak",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 173.1,
-        "net_pts": -170.1
+        "net_pts": 405.2
       },
       {
         "name": "Suyash Sharma",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 182.6,
-        "net_pts": -179.6
+        "net_pts": 395.7
       },
       {
         "name": "Riyan Parag",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 191.0,
-        "net_pts": -188.0
+        "net_pts": 387.3
       },
       {
         "name": "Tristan Stubbs",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 212.0,
-        "net_pts": -209.0
+        "net_pts": 366.3
       },
       {
         "name": "Donovan Ferreira",
-        "espn_name": "RR",
-        "current_pts": -4.8,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 228.2,
-        "net_pts": -233.0
+        "net_pts": 350.1
       },
       {
         "name": "Yashasvi Jaiswal",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 284.5,
-        "net_pts": -281.5
+        "net_pts": 293.8
       },
       {
         "name": "Arshdeep Singh",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 328.9,
-        "net_pts": -325.9
+        "net_pts": 249.4
       },
       {
         "name": "Sunil Narine",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 332.6,
-        "net_pts": -329.6
+        "net_pts": 245.7
       },
       {
         "name": "Mohammed Siraj",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 375.4,
-        "net_pts": -372.4
+        "net_pts": 202.9
       },
       {
         "name": "Priyansh Arya",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 376.8,
-        "net_pts": -373.8
+        "net_pts": 201.5
       },
       {
         "name": "Nitish Kumar Reddy",
-        "espn_name": "RR",
-        "current_pts": -4.8,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 399.1,
-        "net_pts": -403.9
+        "net_pts": 179.2
       },
       {
         "name": "Jamie Overton",
-        "espn_name": "MI",
-        "current_pts": -25.9,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 405.1,
-        "net_pts": -431.0
+        "net_pts": 173.2
       },
       {
         "name": "Kagiso Rabada",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 492.3,
-        "net_pts": -489.3
+        "net_pts": 86.0
       },
       {
         "name": "Abhishek Sharma",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 494.7,
-        "net_pts": -491.7
+        "net_pts": 83.6
       },
       {
         "name": "Vaibhav Suryavanshi",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 499.9,
-        "net_pts": -496.9
+        "net_pts": 78.4
       }
     ],
     "CSK": [
       {
         "name": "MS Dhoni",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 0.0,
-        "net_pts": 3.0
+        "net_pts": 578.3
       },
       {
         "name": "Deepak Chahar",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 36.7,
-        "net_pts": -33.7
+        "net_pts": 541.6
       },
       {
         "name": "Rahul Tewatia",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 43.3,
-        "net_pts": -40.3
+        "net_pts": 535.0
       },
       {
         "name": "Aniket Verma",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 54.1,
-        "net_pts": -51.1
+        "net_pts": 524.2
       },
       {
         "name": "Urvil Patel",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 56.3,
-        "net_pts": -53.3
+        "net_pts": 522.0
       },
       {
         "name": "Sandeep Sharma",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 82.3,
-        "net_pts": -79.3
+        "net_pts": 496.0
       },
       {
         "name": "Avesh Khan",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 97.9,
-        "net_pts": -94.9
+        "net_pts": 480.4
       },
       {
         "name": "Rovman Powell",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 98.2,
-        "net_pts": -95.2
+        "net_pts": 480.1
       },
       {
         "name": "Aiden Markram",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 150.3,
-        "net_pts": -147.3
+        "net_pts": 428.0
       },
       {
         "name": "Nitish Rana",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 161.3,
-        "net_pts": -158.3
+        "net_pts": 417.0
       },
       {
         "name": "Sarfaraz Khan",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 208.3,
-        "net_pts": -205.3
+        "net_pts": 370.0
       },
       {
         "name": "Naman Dhir",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 212.2,
-        "net_pts": -209.2
+        "net_pts": 366.1
       },
       {
         "name": "Vaibhav Arora",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 235.5,
-        "net_pts": -232.5
+        "net_pts": 342.8
       },
       {
         "name": "Kartik Tyagi",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 270.6,
-        "net_pts": -267.6
+        "net_pts": 307.7
       },
       {
         "name": "Lungi Ngidi",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 272.8,
-        "net_pts": -269.8
+        "net_pts": 305.5
       },
       {
         "name": "Noor Ahmad",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 281.7,
-        "net_pts": -278.7
+        "net_pts": 296.6
       },
       {
         "name": "Rashid Khan",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 300.9,
-        "net_pts": -297.9
+        "net_pts": 277.4
       },
       {
         "name": "Travis Head",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 317.1,
-        "net_pts": -314.1
+        "net_pts": 261.2
       },
       {
         "name": "Mohsin Khan",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 317.8,
-        "net_pts": -314.8
+        "net_pts": 260.5
       },
       {
         "name": "Anshul Kamboj",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 371.9,
-        "net_pts": -368.9
+        "net_pts": 206.4
       },
       {
         "name": "Heinrich Klaasen",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 373.4,
-        "net_pts": -370.4
+        "net_pts": 204.9
       },
       {
         "name": "KL Rahul",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 393.6,
-        "net_pts": -390.6
+        "net_pts": 184.7
       },
       {
         "name": "Eshan Malinga",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 397.7,
-        "net_pts": -394.7
+        "net_pts": 180.6
       },
       {
         "name": "Bhuvneshwar Kumar",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 433.9,
-        "net_pts": -430.9
+        "net_pts": 144.4
       },
       {
         "name": "Sanju Samson",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 483.2,
-        "net_pts": -480.2
+        "net_pts": 95.1
       }
     ],
     "MI": [
       {
         "name": "Jacob Bethell",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 24.7,
-        "net_pts": -21.7
+        "net_pts": 553.6
       },
       {
         "name": "Dewald Brevis",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 38.1,
-        "net_pts": -35.1
+        "net_pts": 540.2
       },
       {
         "name": "Salil Arora",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 52.7,
-        "net_pts": -49.7
+        "net_pts": 525.6
       },
       {
         "name": "Suryansh Shedge",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 70.9,
-        "net_pts": -67.9
+        "net_pts": 507.4
       },
       {
         "name": "Gurjapneet Singh",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 71.0,
-        "net_pts": -68.0
+        "net_pts": 507.3
       },
       {
         "name": "Corbin Bosch",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 86.7,
-        "net_pts": -83.7
-      },
-      {
-        "name": "Nicholas Pooran",
-        "espn_name": "11",
-        "current_pts": 3.0,
-        "baseline_pts": 114.8,
-        "net_pts": -111.8
-      },
-      {
-        "name": "Shivam Dube",
-        "espn_name": "11",
-        "current_pts": 3.0,
-        "baseline_pts": 133.7,
-        "net_pts": -130.7
+        "net_pts": 491.6
       },
       {
         "name": "Mitchell Starc",
-        "espn_name": "MI",
-        "current_pts": -25.9,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 107.4,
-        "net_pts": -133.3
+        "net_pts": 470.9
+      },
+      {
+        "name": "Nicholas Pooran",
+        "espn_name": "1",
+        "current_pts": 578.3,
+        "baseline_pts": 114.8,
+        "net_pts": 463.5
+      },
+      {
+        "name": "Shivam Dube",
+        "espn_name": "1",
+        "current_pts": 578.3,
+        "baseline_pts": 133.7,
+        "net_pts": 444.6
       },
       {
         "name": "Marcus Stoinis",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 146.7,
-        "net_pts": -143.7
+        "net_pts": 431.6
       },
       {
         "name": "Hardik Pandya",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 159.1,
-        "net_pts": -156.1
+        "net_pts": 419.2
       },
       {
         "name": "Brijesh Sharma",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 163.7,
-        "net_pts": -160.7
+        "net_pts": 414.6
       },
       {
         "name": "Suryakumar Yadav",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 172.8,
-        "net_pts": -169.8
+        "net_pts": 405.5
       },
       {
         "name": "Angkrish Raghuvanshi",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 180.4,
-        "net_pts": -177.4
+        "net_pts": 397.9
       },
       {
         "name": "Jason Holder",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 199.0,
-        "net_pts": -196.0
+        "net_pts": 379.3
       },
       {
         "name": "Rishabh Pant",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 213.9,
-        "net_pts": -210.9
+        "net_pts": 364.4
       },
       {
         "name": "Tim David",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 220.0,
-        "net_pts": -217.0
+        "net_pts": 358.3
       },
       {
         "name": "Yuzvendra Chahal",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 242.4,
-        "net_pts": -239.4
+        "net_pts": 335.9
       },
       {
         "name": "Marco Jansen",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 264.0,
-        "net_pts": -261.0
+        "net_pts": 314.3
       },
       {
         "name": "Jos Buttler",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 299.5,
-        "net_pts": -296.5
+        "net_pts": 278.8
       },
       {
         "name": "Ravindra Jadeja",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 322.4,
-        "net_pts": -319.4
+        "net_pts": 255.9
       },
       {
         "name": "Axar Patel",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 327.1,
-        "net_pts": -324.1
+        "net_pts": 251.2
       },
       {
         "name": "Sai Sudharsan",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 330.9,
-        "net_pts": -327.9
+        "net_pts": 247.4
       },
       {
         "name": "Shubman Gill",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 337.1,
-        "net_pts": -334.1
+        "net_pts": 241.2
       },
       {
         "name": "Rajat Patidar",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 375.8,
-        "net_pts": -372.8
+        "net_pts": 202.5
       }
     ],
     "RCB": [
       {
         "name": "Prashant Veer",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 8.9,
-        "net_pts": -5.9
+        "net_pts": 569.4
       },
       {
         "name": "Harpreet Brar",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 19.6,
-        "net_pts": -16.6
+        "net_pts": 558.7
       },
       {
         "name": "Trent Boult",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 83.1,
-        "net_pts": -80.1
+        "net_pts": 495.2
       },
       {
         "name": "Romario Shepherd",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 87.8,
-        "net_pts": -84.8
+        "net_pts": 490.5
       },
       {
         "name": "Finn Allen",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 110.4,
-        "net_pts": -107.4
+        "net_pts": 467.9
       },
       {
         "name": "T Natarajan",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 134.0,
-        "net_pts": -131.0
+        "net_pts": 444.3
       },
       {
         "name": "Ajinkya Rahane",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 135.8,
-        "net_pts": -132.8
+        "net_pts": 442.5
       },
       {
         "name": "Mukul Choudhary",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 159.5,
-        "net_pts": -156.5
+        "net_pts": 418.8
       },
       {
         "name": "Phil Salt",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 165.3,
-        "net_pts": -162.3
+        "net_pts": 413.0
       },
       {
         "name": "Mukesh Kumar",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 175.0,
-        "net_pts": -172.0
+        "net_pts": 403.3
       },
       {
         "name": "Harsh Dubey",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 185.7,
-        "net_pts": -182.7
+        "net_pts": 392.6
       },
       {
         "name": "Tilak Varma",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 211.7,
-        "net_pts": -208.7
+        "net_pts": 366.6
       },
       {
         "name": "Rinku Singh",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 220.4,
-        "net_pts": -217.4
+        "net_pts": 357.9
       },
       {
         "name": "Ravi Bishnoi",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 225.7,
-        "net_pts": -222.7
+        "net_pts": 352.6
       },
       {
         "name": "Shreyas Iyer",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 226.3,
-        "net_pts": -223.3
+        "net_pts": 352.0
       },
       {
         "name": "Josh Hazlewood",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 234.7,
-        "net_pts": -231.7
+        "net_pts": 343.6
       },
       {
         "name": "Prasidh Krishna",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 243.9,
-        "net_pts": -240.9
+        "net_pts": 334.4
       },
       {
         "name": "Cooper Connolly",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 252.4,
-        "net_pts": -249.4
+        "net_pts": 325.9
       },
       {
         "name": "Cameron Green",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 278.5,
-        "net_pts": -275.5
+        "net_pts": 299.8
       },
       {
         "name": "Varun Chakravarthy",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 283.4,
-        "net_pts": -280.4
+        "net_pts": 294.9
       },
       {
         "name": "Devdutt Padikkal",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 290.5,
-        "net_pts": -287.5
+        "net_pts": 287.8
       },
       {
         "name": "Virat Kohli",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 296.5,
-        "net_pts": -293.5
+        "net_pts": 281.8
       },
       {
         "name": "Allah Ghazanfar",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 317.7,
-        "net_pts": -314.7
+        "net_pts": 260.6
       },
       {
         "name": "Prabhsimran Singh",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 331.9,
-        "net_pts": -328.9
+        "net_pts": 246.4
       },
       {
         "name": "Jofra Archer",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 443.8,
-        "net_pts": -440.8
+        "net_pts": 134.5
       }
     ],
     "SRH": [
       {
         "name": "Jitesh Sharma",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": -7.2,
-        "net_pts": 10.2
+        "net_pts": 585.5
       },
       {
         "name": "Shimron Hetmyer",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 29.6,
-        "net_pts": -26.6
+        "net_pts": 548.7
       },
       {
         "name": "Will Jacks",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 50.2,
-        "net_pts": -47.2
+        "net_pts": 528.1
       },
       {
         "name": "Mukesh Choudhary",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 119.1,
-        "net_pts": -116.1
+        "net_pts": 459.2
       },
       {
         "name": "Kartik Sharma",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 123.6,
-        "net_pts": -120.6
-      },
-      {
-        "name": "Ruturaj Gaikwad",
-        "espn_name": "11",
-        "current_pts": 3.0,
-        "baseline_pts": 157.6,
-        "net_pts": -154.6
+        "net_pts": 454.7
       },
       {
         "name": "Mitchell Santner",
-        "espn_name": "MI",
-        "current_pts": -25.9,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 128.9,
-        "net_pts": -154.8
+        "net_pts": 449.4
+      },
+      {
+        "name": "Ruturaj Gaikwad",
+        "espn_name": "1",
+        "current_pts": 578.3,
+        "baseline_pts": 157.6,
+        "net_pts": 420.7
       },
       {
         "name": "Praful Hinge",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 159.2,
-        "net_pts": -156.2
-      },
-      {
-        "name": "Akeal Hosein",
-        "espn_name": "11",
-        "current_pts": 3.0,
-        "baseline_pts": 175.8,
-        "net_pts": -172.8
-      },
-      {
-        "name": "Washington Sundar",
-        "espn_name": "GT",
-        "current_pts": 2.9,
-        "baseline_pts": 184.9,
-        "net_pts": -182.0
-      },
-      {
-        "name": "Shivang Kumar",
-        "espn_name": "11",
-        "current_pts": 3.0,
-        "baseline_pts": 189.5,
-        "net_pts": -186.5
-      },
-      {
-        "name": "Dhruv Jurel",
-        "espn_name": "11",
-        "current_pts": 3.0,
-        "baseline_pts": 193.8,
-        "net_pts": -190.8
+        "net_pts": 419.1
       },
       {
         "name": "Pat Cummins",
-        "espn_name": "MI",
-        "current_pts": -25.9,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 165.4,
-        "net_pts": -191.3
+        "net_pts": 412.9
+      },
+      {
+        "name": "Akeal Hosein",
+        "espn_name": "1",
+        "current_pts": 578.3,
+        "baseline_pts": 175.8,
+        "net_pts": 402.5
+      },
+      {
+        "name": "Washington Sundar",
+        "espn_name": "1",
+        "current_pts": 578.3,
+        "baseline_pts": 184.9,
+        "net_pts": 393.4
+      },
+      {
+        "name": "Shivang Kumar",
+        "espn_name": "1",
+        "current_pts": 578.3,
+        "baseline_pts": 189.5,
+        "net_pts": 388.8
+      },
+      {
+        "name": "Dhruv Jurel",
+        "espn_name": "1",
+        "current_pts": 578.3,
+        "baseline_pts": 193.8,
+        "net_pts": 384.5
       },
       {
         "name": "Sakib Hussain",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 196.5,
-        "net_pts": -193.5
+        "net_pts": 381.8
       },
       {
         "name": "Kuldeep Yadav",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 197.3,
-        "net_pts": -194.3
+        "net_pts": 381.0
       },
       {
         "name": "Pathum Nissanka",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 211.9,
-        "net_pts": -208.9
+        "net_pts": 366.4
       },
       {
         "name": "Rohit Sharma",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 213.3,
-        "net_pts": -210.3
-      },
-      {
-        "name": "Nandre Burger",
-        "espn_name": "11",
-        "current_pts": 3.0,
-        "baseline_pts": 257.6,
-        "net_pts": -254.6
+        "net_pts": 365.0
       },
       {
         "name": "Sameer Rizvi",
-        "espn_name": "RR",
-        "current_pts": -4.8,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 250.8,
-        "net_pts": -255.6
+        "net_pts": 327.5
+      },
+      {
+        "name": "Nandre Burger",
+        "espn_name": "1",
+        "current_pts": 578.3,
+        "baseline_pts": 257.6,
+        "net_pts": 320.7
       },
       {
         "name": "Jasprit Bumrah",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 269.1,
-        "net_pts": -266.1
+        "net_pts": 309.2
       },
       {
         "name": "Krunal Pandya",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 312.2,
-        "net_pts": -309.2
+        "net_pts": 266.1
       },
       {
         "name": "Ryan Rickelton",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 361.8,
-        "net_pts": -358.8
+        "net_pts": 216.5
       },
       {
         "name": "Mohammed Shami",
-        "espn_name": "MI",
-        "current_pts": -25.9,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 411.0,
-        "net_pts": -436.9
+        "net_pts": 167.3
       },
       {
         "name": "Ishan Kishan",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 446.6,
-        "net_pts": -443.6
+        "net_pts": 131.7
       },
       {
         "name": "Prince Yadav",
-        "espn_name": "11",
-        "current_pts": 3.0,
+        "espn_name": "1",
+        "current_pts": 578.3,
         "baseline_pts": 468.5,
-        "net_pts": -465.5
+        "net_pts": 109.8
       }
     ]
   }
