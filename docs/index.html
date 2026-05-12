@@ -85,8 +85,8 @@ const TEAM_META = {
 };
 
 // Handle both old field names (net_pts/baseline_pts) and new (net/base)
-function pNet(p)  { return p.net  ?? p.net_pts      ?? 0; }
-function pBase(p) { return p.base ?? p.baseline_pts ?? 0; }
+function pNet(p)  { return p.net      ?? p.net_pts      ?? 0; }
+function pBase(p) { return p.baseline ?? p.baseline_pts ?? p.base ?? 0; }
 
 function getSelections(team) {
   try { return JSON.parse(localStorage.getItem('ipl_sel_' + team)) || []; }
