@@ -29,15 +29,10 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install Chrome + ChromeDriver
+      - name: Install Chrome
         run: |
           sudo apt-get update -q
           sudo apt-get install -y -q google-chrome-stable
-          # Install matching ChromeDriver via apt (avoids webdriver-manager bug)
-          CHROME_VERSION=$(google-chrome --version | grep -oP '\d+' | head -1)
-          echo "Chrome major version: $CHROME_VERSION"
-          # Selenium-manager (built into selenium 4.10+) will auto-match driver
-          python -c "from selenium.webdriver.chrome.service import Service; print('selenium-manager ready')"
 
 
       - name: Install Python dependencies
