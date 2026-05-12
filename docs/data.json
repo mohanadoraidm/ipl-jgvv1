@@ -1,11 +1,11 @@
 {
-  "updated_at": "12 May 2026 14:00 UTC",
+  "updated_at": "12 May 2026 14:07 UTC",
   "auction_date": "2026-05-08",
   "leaderboard": [
     {
       "rank": 1,
       "team": "MI",
-      "total_net_pts": -4663.5
+      "total_net_pts": -4651.8
     },
     {
       "rank": 2,
@@ -15,7 +15,7 @@
     {
       "rank": 3,
       "team": "SRH",
-      "total_net_pts": -5295.0
+      "total_net_pts": -5245.0
     },
     {
       "rank": 4,
@@ -25,7 +25,7 @@
     {
       "rank": 5,
       "team": "RR",
-      "total_net_pts": -5888.9
+      "total_net_pts": -5843.9
     }
   ],
   "teams": {
@@ -68,9 +68,9 @@
       {
         "name": "David Miller",
         "espn_name": "MI",
-        "current_pts": -8.7,
+        "current_pts": 3.0,
         "baseline_pts": 111.1,
-        "net_pts": -119.8
+        "net_pts": -108.1
       },
       {
         "name": "Rasikh Salam",
@@ -131,9 +131,9 @@
       {
         "name": "Donovan Ferreira",
         "espn_name": "RR",
-        "current_pts": -4.8,
+        "current_pts": 6.0,
         "baseline_pts": 228.2,
-        "net_pts": -233.0
+        "net_pts": -222.2
       },
       {
         "name": "Yashasvi Jaiswal",
@@ -173,16 +173,16 @@
       {
         "name": "Nitish Kumar Reddy",
         "espn_name": "RR",
-        "current_pts": -4.8,
+        "current_pts": 6.0,
         "baseline_pts": 399.1,
-        "net_pts": -403.9
+        "net_pts": -393.1
       },
       {
         "name": "Jamie Overton",
         "espn_name": "MI",
-        "current_pts": -8.7,
+        "current_pts": 3.0,
         "baseline_pts": 405.1,
-        "net_pts": -413.8
+        "net_pts": -402.1
       },
       {
         "name": "Kagiso Rabada",
@@ -427,18 +427,18 @@
         "net_pts": -86.7
       },
       {
+        "name": "Mitchell Starc",
+        "espn_name": "MI",
+        "current_pts": 3.0,
+        "baseline_pts": 107.4,
+        "net_pts": -104.4
+      },
+      {
         "name": "Nicholas Pooran",
         "espn_name": "Not on ESPN yet",
         "current_pts": 0.0,
         "baseline_pts": 114.8,
         "net_pts": -114.8
-      },
-      {
-        "name": "Mitchell Starc",
-        "espn_name": "MI",
-        "current_pts": -8.7,
-        "baseline_pts": 107.4,
-        "net_pts": -116.1
       },
       {
         "name": "Shivam Dube",
@@ -776,9 +776,9 @@
       {
         "name": "Mitchell Santner",
         "espn_name": "MI",
-        "current_pts": -8.7,
+        "current_pts": 3.0,
         "baseline_pts": 128.9,
-        "net_pts": -137.6
+        "net_pts": -125.9
       },
       {
         "name": "Ruturaj Gaikwad",
@@ -797,9 +797,9 @@
       {
         "name": "Pat Cummins",
         "espn_name": "MI",
-        "current_pts": -8.7,
+        "current_pts": 3.0,
         "baseline_pts": 165.4,
-        "net_pts": -174.1
+        "net_pts": -162.4
       },
       {
         "name": "Akeal Hosein",
@@ -811,9 +811,9 @@
       {
         "name": "Washington Sundar",
         "espn_name": "GT",
-        "current_pts": 2.9,
+        "current_pts": 7.0,
         "baseline_pts": 184.9,
-        "net_pts": -182.0
+        "net_pts": -177.9
       },
       {
         "name": "Shivang Kumar",
@@ -860,9 +860,9 @@
       {
         "name": "Sameer Rizvi",
         "espn_name": "RR",
-        "current_pts": -4.8,
+        "current_pts": 6.0,
         "baseline_pts": 250.8,
-        "net_pts": -255.6
+        "net_pts": -244.8
       },
       {
         "name": "Nandre Burger",
@@ -895,9 +895,9 @@
       {
         "name": "Mohammed Shami",
         "espn_name": "MI",
-        "current_pts": -8.7,
+        "current_pts": 3.0,
         "baseline_pts": 411.0,
-        "net_pts": -419.7
+        "net_pts": -408.0
       },
       {
         "name": "Ishan Kishan",
