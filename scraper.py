@@ -9,7 +9,7 @@ from datetime import datetime
 # ── SQUADS ──────────────────────────────────────────────
 SQUADS = {
   "RR":  ["Shardul Thakur","David Miller","Yashasvi Jaiswal","Arshdeep Singh",
-          "Priyansh Arya","Vaibhav Suryavanshi","Kagiso Rabada","Abhishek Sharma",
+          "Priyansh Arya","Vaibhav Sooryavanshi","Kagiso Rabada","Abhishek Sharma",
           "Sunil Narine","Suyash Sharma","Jamie Overton","Mohammed Siraj",
           "Donovan Ferreira","Riyan Parag","Vijaykumar Vyshak","Mayank Yadav",
           "Nitish Kumar Reddy","Rasikh Salam","Nehal Wadhera","Shashank Singh",
@@ -29,7 +29,7 @@ SQUADS = {
   "RCB": ["Virat Kohli","Shreyas Iyer","Tilak Varma","Devdutt Padikkal",
           "Rinku Singh","Ajinkya Rahane","Prabhsimran Singh","Phil Salt",
           "Cameron Green","Cooper Connolly","Harpreet Brar","Ravi Bishnoi",
-          "Varun Chakravarthy","Allah Ghazanfar","Harsh Dubey","Prashant Veer",
+          "Varun Chakravarthy","AM Ghazanfar","Harsh Dubey","Prashant Veer",
           "Jofra Archer","Josh Hazlewood","Trent Boult","Prasidh Krishna",
           "T Natarajan","Mukesh Kumar","Mukul Choudhary","Finn Allen","Romario Shepherd"],
   "SRH": ["Shimron Hetmyer","Kuldeep Yadav","Akeal Hosein","Will Jacks",
@@ -43,7 +43,7 @@ SQUADS = {
 # ── BASELINE (points as of 8 May 2026 from PDF) ─────────
 BASELINE = {
   "Shardul Thakur":129.5,"David Miller":111.1,"Yashasvi Jaiswal":284.5,
-  "Arshdeep Singh":328.9,"Priyansh Arya":376.8,"Vaibhav Suryavanshi":499.9,
+  "Arshdeep Singh":328.9,"Priyansh Arya":376.8,"Vaibhav Sooryavanshi":499.9,
   "Kagiso Rabada":492.3,"Abhishek Sharma":494.7,"Sunil Narine":332.6,
   "Suyash Sharma":182.6,"Jamie Overton":405.1,"Mohammed Siraj":375.4,
   "Donovan Ferreira":228.2,"Riyan Parag":191.0,"Vijaykumar Vyshak":173.1,
@@ -69,7 +69,7 @@ BASELINE = {
   "Devdutt Padikkal":290.5,"Rinku Singh":220.4,"Ajinkya Rahane":135.8,
   "Prabhsimran Singh":331.9,"Phil Salt":165.3,"Cameron Green":278.5,
   "Cooper Connolly":252.4,"Harpreet Brar":19.6,"Ravi Bishnoi":225.7,
-  "Varun Chakravarthy":283.4,"Allah Ghazanfar":317.7,"Harsh Dubey":185.7,
+  "Varun Chakravarthy":283.4,"AM Ghazanfar":317.7,"Harsh Dubey":185.7,
   "Prashant Veer":8.9,"Jofra Archer":443.8,"Josh Hazlewood":234.7,
   "Trent Boult":83.1,"Prasidh Krishna":243.9,"T Natarajan":134.0,
   "Mukesh Kumar":175.0,"Mukul Choudhary":159.5,"Finn Allen":110.4,"Romario Shepherd":87.8,
