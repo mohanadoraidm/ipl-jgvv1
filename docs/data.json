@@ -1,9 +1,9 @@
 {
-  "updated_at": "21 May 2026 20:21 IST",
+  "updated_at": "22 May 2026 20:21 IST",
   "leaderboard": [
     {
       "team": "MI",
-      "total": 1902.8,
+      "total": 1946.5,
       "players": [
         {
           "name": "Sai Sudharsan",
@@ -78,10 +78,22 @@
           "net": 59.5
         },
         {
+          "name": "Rajat Patidar",
+          "current": 420.2,
+          "baseline": 375.8,
+          "net": 44.4
+        },
+        {
           "name": "Suryansh Shedge",
           "current": 113.4,
           "baseline": 70.9,
           "net": 42.5
+        },
+        {
+          "name": "Tim David",
+          "current": 259.9,
+          "baseline": 220.0,
+          "net": 39.9
         },
         {
           "name": "Salil Arora",
@@ -108,12 +120,6 @@
           "net": 29.6
         },
         {
-          "name": "Tim David",
-          "current": 248.3,
-          "baseline": 220.0,
-          "net": 28.3
-        },
-        {
           "name": "Jacob Bethell",
           "current": 49.6,
           "baseline": 24.7,
@@ -138,12 +144,6 @@
           "net": 12.3
         },
         {
-          "name": "Rajat Patidar",
-          "current": 388.1,
-          "baseline": 375.8,
-          "net": 12.3
-        },
-        {
           "name": "Hardik Pandya",
           "current": 169.4,
           "baseline": 159.1,
@@ -160,7 +160,7 @@
     },
     {
       "team": "RR",
-      "total": 1508.9,
+      "total": 1697.8,
       "players": [
         {
           "name": "Vaibhav Sooryavanshi",
@@ -187,6 +187,18 @@
           "net": 157.8
         },
         {
+          "name": "Rasikh Salam",
+          "current": 249.8,
+          "baseline": 125.3,
+          "net": 124.5
+        },
+        {
+          "name": "Abhishek Sharma",
+          "current": 613.6,
+          "baseline": 494.7,
+          "net": 118.9
+        },
+        {
           "name": "Shardul Thakur",
           "current": 234.0,
           "baseline": 129.5,
@@ -197,12 +209,6 @@
           "current": 185.0,
           "baseline": 82.8,
           "net": 102.2
-        },
-        {
-          "name": "Rasikh Salam",
-          "current": 223.4,
-          "baseline": 125.3,
-          "net": 98.1
         },
         {
           "name": "Arshdeep Singh",
@@ -241,22 +247,28 @@
           "net": 40.7
         },
         {
+          "name": "Suyash Sharma",
+          "current": 221.8,
+          "baseline": 182.6,
+          "net": 39.2
+        },
+        {
           "name": "Shashank Singh",
           "current": 194.7,
           "baseline": 158.3,
           "net": 36.4
         },
         {
-          "name": "Abhishek Sharma",
-          "current": 519.1,
-          "baseline": 494.7,
-          "net": 24.4
-        },
-        {
           "name": "Priyansh Arya",
           "current": 400.8,
           "baseline": 376.8,
           "net": 24.0
+        },
+        {
+          "name": "Nitish Kumar Reddy",
+          "current": 417.3,
+          "baseline": 399.1,
+          "net": 18.2
         },
         {
           "name": "Donovan Ferreira",
@@ -269,12 +281,6 @@
           "current": 153.2,
           "baseline": 140.8,
           "net": 12.4
-        },
-        {
-          "name": "Suyash Sharma",
-          "current": 185.8,
-          "baseline": 182.6,
-          "net": 3.2
         },
         {
           "name": "Vijaykumar Vyshak",
@@ -301,12 +307,6 @@
           "net": -5.8
         },
         {
-          "name": "Nitish Kumar Reddy",
-          "current": 385.3,
-          "baseline": 399.1,
-          "net": -13.8
-        },
-        {
           "name": "Tristan Stubbs",
           "current": 185.6,
           "baseline": 212.0,
@@ -317,13 +317,13 @@
     },
     {
       "team": "CSK",
-      "total": 1474.7,
+      "total": 1623.4,
       "players": [
         {
           "name": "Bhuvneshwar Kumar",
-          "current": 696.9,
+          "current": 702.6,
           "baseline": 433.9,
-          "net": 263.0
+          "net": 268.7
         },
         {
           "name": "Kartik Tyagi",
@@ -336,6 +336,12 @@
           "current": 169.9,
           "baseline": 36.7,
           "net": 133.2
+        },
+        {
+          "name": "Heinrich Klaasen",
+          "current": 503.0,
+          "baseline": 373.4,
+          "net": 129.6
         },
         {
           "name": "Noor Ahmad",
@@ -362,10 +368,10 @@
           "net": 97.9
         },
         {
-          "name": "Heinrich Klaasen",
-          "current": 444.5,
-          "baseline": 373.4,
-          "net": 71.1
+          "name": "Eshan Malinga",
+          "current": 475.8,
+          "baseline": 397.7,
+          "net": 78.1
         },
         {
           "name": "Sanju Samson",
@@ -404,10 +410,10 @@
           "net": 44.0
         },
         {
-          "name": "Eshan Malinga",
-          "current": 426.8,
-          "baseline": 397.7,
-          "net": 29.1
+          "name": "Travis Head",
+          "current": 347.7,
+          "baseline": 317.1,
+          "net": 30.6
         },
         {
           "name": "Avesh Khan",
@@ -452,12 +458,6 @@
           "net": -1.8
         },
         {
-          "name": "Travis Head",
-          "current": 312.2,
-          "baseline": 317.1,
-          "net": -4.9
-        },
-        {
           "name": "Sandeep Sharma",
           "current": 75.6,
           "baseline": 82.3,
@@ -474,13 +474,19 @@
     },
     {
       "team": "SRH",
-      "total": 1451.8,
+      "total": 1588.9,
       "players": [
         {
+          "name": "Krunal Pandya",
+          "current": 480.5,
+          "baseline": 312.2,
+          "net": 168.3
+        },
+        {
           "name": "Pat Cummins",
-          "current": 325.3,
+          "current": 321.0,
           "baseline": 165.4,
-          "net": 159.9
+          "net": 155.6
         },
         {
           "name": "Mukesh Choudhary",
@@ -489,16 +495,22 @@
           "net": 144.5
         },
         {
+          "name": "Sakib Hussain",
+          "current": 329.3,
+          "baseline": 196.5,
+          "net": 132.8
+        },
+        {
+          "name": "Ishan Kishan",
+          "current": 577.9,
+          "baseline": 446.6,
+          "net": 131.3
+        },
+        {
           "name": "Kartik Sharma",
           "current": 243.1,
           "baseline": 123.6,
           "net": 119.5
-        },
-        {
-          "name": "Krunal Pandya",
-          "current": 426.2,
-          "baseline": 312.2,
-          "net": 114.0
         },
         {
           "name": "Washington Sundar",
@@ -511,18 +523,6 @@
           "current": 302.4,
           "baseline": 193.8,
           "net": 108.6
-        },
-        {
-          "name": "Sakib Hussain",
-          "current": 282.8,
-          "baseline": 196.5,
-          "net": 86.3
-        },
-        {
-          "name": "Ishan Kishan",
-          "current": 524.7,
-          "baseline": 446.6,
-          "net": 78.1
         },
         {
           "name": "Praful Hinge",
@@ -592,9 +592,9 @@
         },
         {
           "name": "Shivang Kumar",
-          "current": 204.2,
+          "current": 191.6,
           "baseline": 189.5,
-          "net": 14.7
+          "net": 2.1
         },
         {
           "name": "Mitchell Santner",
@@ -631,7 +631,7 @@
     },
     {
       "team": "RCB",
-      "total": 1377.7,
+      "total": 1397.4,
       "players": [
         {
           "name": "Finn Allen",
@@ -640,16 +640,16 @@
           "net": 284.0
         },
         {
+          "name": "Virat Kohli",
+          "current": 460.9,
+          "baseline": 296.5,
+          "net": 164.4
+        },
+        {
           "name": "Cameron Green",
           "current": 441.7,
           "baseline": 278.5,
           "net": 163.2
-        },
-        {
-          "name": "Virat Kohli",
-          "current": 454.0,
-          "baseline": 296.5,
-          "net": 157.5
         },
         {
           "name": "Tilak Varma",
@@ -658,22 +658,22 @@
           "net": 153.9
         },
         {
+          "name": "Devdutt Padikkal",
+          "current": 393.3,
+          "baseline": 290.5,
+          "net": 102.8
+        },
+        {
           "name": "Jofra Archer",
           "current": 540.0,
           "baseline": 443.8,
           "net": 96.2
         },
         {
-          "name": "Devdutt Padikkal",
-          "current": 382.4,
-          "baseline": 290.5,
-          "net": 91.9
-        },
-        {
           "name": "Josh Hazlewood",
-          "current": 319.4,
+          "current": 319.0,
           "baseline": 234.7,
-          "net": 84.7
+          "net": 84.3
         },
         {
           "name": "Rinku Singh",
@@ -689,9 +689,9 @@
         },
         {
           "name": "Romario Shepherd",
-          "current": 129.5,
+          "current": 131.8,
           "baseline": 87.8,
-          "net": 41.7
+          "net": 44.0
         },
         {
           "name": "Prabhsimran Singh",
