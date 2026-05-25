@@ -36,7 +36,7 @@ SQUADS = {
           "Krunal Pandya","Jitesh Sharma","Ryan Rickelton","Kartik Sharma",
           "Ruturaj Gaikwad","Pat Cummins","Pathum Nissanka","Sameer Rizvi",
           "Mukesh Choudhary","Mohammed Shami","Praful Hinge","Sakib Hussain",
-          "Mitchell Santner","Washington Sundar","Dhruv Jurel","Rohit Sharma",
+          "Mitchell Marsh","Washington Sundar","Dhruv Jurel","Rohit Sharma",
           "Jasprit Bumrah","Prince Yadav","Ishan Kishan","Shivang Kumar","Nandre Burger"]
 }
 
@@ -78,7 +78,7 @@ BASELINE = {
   "Ryan Rickelton":361.8,"Kartik Sharma":123.6,"Ruturaj Gaikwad":157.6,
   "Pat Cummins":165.4,"Pathum Nissanka":211.9,"Sameer Rizvi":250.8,
   "Mukesh Choudhary":119.1,"Mohammed Shami":411.0,"Praful Hinge":159.2,
-  "Sakib Hussain":196.5,"Mitchell Santner":128.9,"Washington Sundar":184.9,
+  "Sakib Hussain":196.5,"Mitchell Marsh":399.9,"Washington Sundar":184.9,
   "Dhruv Jurel":193.8,"Rohit Sharma":213.3,"Jasprit Bumrah":269.1,
   "Prince Yadav":468.5,"Ishan Kishan":446.6,"Shivang Kumar":189.5,"Nandre Burger":257.6
 }
