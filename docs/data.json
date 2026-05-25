@@ -1,5 +1,5 @@
 {
-  "updated_at": "24 May 2026 19:47 IST",
+  "updated_at": "25 May 2026 03:09 IST",
   "leaderboard": [
     {
       "team": "MI",
@@ -160,8 +160,14 @@
     },
     {
       "team": "SRH",
-      "total": 1941.9,
+      "total": 2123.0,
       "players": [
+        {
+          "name": "Mitchell Marsh",
+          "current": 581.0,
+          "baseline": 399.9,
+          "net": 181.1
+        },
         {
           "name": "Krunal Pandya",
           "current": 480.5,
@@ -293,12 +299,6 @@
           "current": 191.6,
           "baseline": 189.5,
           "net": 2.1
-        },
-        {
-          "name": "Mitchell Santner",
-          "current": 128.9,
-          "baseline": 128.9,
-          "net": 0.0
         },
         {
           "name": "Shimron Hetmyer",
